@@ -1,0 +1,65 @@
+.portfolioPage { 
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    animation: changePageAnimationIntro .4s linear;
+}
+
+.portfolioPage.exit {
+    animation: changePageAnimation .4s linear forwards;
+}
+
+.portfolioPage__space, .top{
+    width: 90%;
+    height: 5%;
+}
+
+.portfolioPage__space.top{  
+    border-left: 5px solid slateblue;
+}
+
+.portfolioPage__space.bottom{  
+    border-right: 5px solid slateblue;
+}
+
+.portfolioPage__content {
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(166, 165, 219);
+    
+    border: 5px solid slateblue;
+    border-top: 2px solid slateblue;
+    border-right: 2px solid slateblue;
+    border-radius: 0 15px 0 15px;
+}
+
+.portfolioPage__button {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+}
+
+@keyframes changePageAnimationIntro {
+    0% {opacity: 0;  transform: scaleX(0);}
+    50%  {opacity: .5; transform: scaleX(1);}
+    75% {opacity: 1; }
+    100% {opacity: 1; transform: scaleX(1);}
+}
+
+@keyframes changePageAnimation {
+    0% {opacity: 1;  transform: scaleX(1);}
+    50%  {opacity: .5; transform: scaleX(.5);}
+    75% {opacity: 0; }
+    100% {opacity: 0; transform: scaleX(0);}
+}
