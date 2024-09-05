@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+//Context
+import { ChangePageProvider } from './Context/useChangePageContext';
 //Pages
 import NavPage from './Nav/NavPage';
 import FooterPage from './Footer/FooterPage';
@@ -16,16 +18,18 @@ function App() {
   return (
     <>
       <Router>
-        {<NavPage />}
-        <Routes>
-          <Route path='/' element={<MainPage />} />
-          <Route path='/portfolio' element={<PortfolioPage />} />
-          <Route path='/skills' element={<SkillsPage />} />
-          <Route path='/experience' element={<ExperiencePage />} />
-          <Route path='/links' element={<LinksPage />} />
-          <Route path='/contact' element={<ContactPage />} />
-        </Routes>
-        {<FooterPage />}
+        <ChangePageProvider>
+          {<NavPage />}
+          <Routes>
+            <Route path='/' element={<MainPage />} />
+            <Route path='/portfolio' element={<PortfolioPage />} />
+            <Route path='/skills' element={<SkillsPage />} />
+            <Route path='/experience' element={<ExperiencePage />} />
+            <Route path='/links' element={<LinksPage />} />
+            <Route path='/contact' element={<ContactPage />} />
+          </Routes>
+          {<FooterPage />}
+        </ChangePageProvider>
       </Router>
     </>
   )

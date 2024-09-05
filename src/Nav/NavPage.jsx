@@ -1,15 +1,22 @@
 import { useNavigate } from "react-router-dom";
+import { useChangePageContext } from "../Context/useChangePageContext";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import './NavPage.css'
 
-const NavPage = () => { 
+const NavPage = () => {
+    const { setChangePage } = useChangePageContext();
     const navigate = useNavigate();
-    const handleClick = (page) => {
+    const location = useLocation();
 
-    setTimeout(() => {
-        navigate(page);
-    }, 800);
+    const handleClick = (page) => {
+        if (location.pathname !== page) {
+            setChangePage(true);
+
+            setTimeout(() => {
+                navigate(page);
+            }, 400);
+        }
     };
 
     return (
