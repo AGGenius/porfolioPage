@@ -1,3 +1,7 @@
+ul {
+    list-style: none;
+}
+
 .portfolioPage { 
     width: 100%;
     height: 100%;
@@ -32,6 +36,7 @@
     height: 100%;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -43,10 +48,125 @@
     border-radius: 0 15px 0 15px;
 }
 
-.portfolioPage__button {
-    width: 50px;
-    height: 50px;
+.portfolioPage__cardWrap {
+    width: 100%;
+    height: 90%;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolioPage__list {
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolioPage__card {
+    width: 45%;
+    height: 30%;
+    gap: .5rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid rgb(128, 131, 173);
+    border-radius: 15px;
+    background-color: rgb(182, 194, 245);
+    box-shadow:  5px 5px 10px rgba(66, 66, 66, 0.4);
+
+    transition: all .5s;
+
+    padding: .5rem;
+}
+
+.portfolioPage__card:hover {
+    border: 2px solid rgb(128, 131, 173);
+    border-radius: 15prgb(48, 51, 90);
+    background-color: rgb(207, 212, 235);
+    box-shadow:  10px 10px 10px rgba(66, 66, 66, 0.6);
+
+    transition: all .5s;
+}
+
+.portfolioPage__textSection {
+    width: 50%;
+    height: 90%;
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: .9rem;
+}
+
+.portfolioPage__tittle {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.portfolioPage__media {
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolioPage__webpagePhoto {
+    width: 100%;
+    height: auto;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+}
+
+.portfolioPage__linkWrap {
+    width: 100%;
+    height: 10%;
+    gap: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolioPage__icon {
+    color: rgb(67, 60, 97);
+}
+
+.portfolioPage__icon:hover {
+    color: rgb(119, 68, 201);
+}
+
+.portfolioPage__buttonWrap {
+    width: 100%;
+    height: 10%;
+    gap: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolioPage__button {
+    width: 60px;
+    height: 40px;
+    
     border-radius: 50%;
 }
 
