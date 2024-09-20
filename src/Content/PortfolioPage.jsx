@@ -1,24 +1,24 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useChangePageContext } from "../Context/useChangePageContext";
 import { useEffect, useState } from "react";
-import gamerRestPortalImg from "../assets/images/GamerRestFront_Basic.jpg"
-import dashboardPortalImg from "../assets/images/Dashboard_Basic.jpg"
-import gitSearchPortalImg from "../assets/images/GitSearch_Basic.jpg"
-import CoinsPortalImg from "../assets/images/Coins_Basic.jpg"
-import FlagsPortalImg from "../assets/images/Banderas_Basic.jpg"
-import atomicChamberPortalImg from "../assets/images/AtomicChamber_Basic.jpg"
 import './PortfolioPage.css'
 
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse } from "@fortawesome/free-solid-svg-icons/faHouse";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import GamerRest from "../Modules/Portfolio/GamerRest";
+import GamerRestBig from "../Modules/Portfolio/GamerRestBig";
+import ReactCoin from "../Modules/Portfolio/ReactCoin";
+import Dashboard from "../Modules/Portfolio/Dashboard";
+import Flags from "../Modules/Portfolio/Flags";
+import AtomicChamber from "../Modules/Portfolio/AtomicChamber";
 
 const PortfolioPage = () => {
     const { changePage, setChangePage } = useChangePageContext();
     const navigate = useNavigate();
     const [exit, setExit] = useState(false);
     const [cont, setCont] = useState(0);
+
+    const [bigCard, setBigCard] = useState("");
+    const [changeCard, setChangeCard] = useState(false);
+    const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
         setChangePage(false);
@@ -40,105 +40,55 @@ const PortfolioPage = () => {
         }, 400);
     };
 
+    const handleBigCard = (portfolioCard) => {
+        const actualState = portfolioCard;
+        const actualChange = changeCard;
+        setLoaded(true);
+
+        setChangeCard(!actualChange);
+
+        setTimeout(() => {
+            setBigCard(actualState);
+        }, 300);
+    }
+
     return (
         <div className={!exit ? "portfolioPage" : "portfolioPage exit"}>
             <div className="portfolioPage__space top"></div>
             <article className="portfolioPage__content">
-                <section className="portfolioPage__cardWrap">
-                    <ul className="portfolioPage__list">
-                        <li className="portfolioPage__card">
-                            <div className="portfolioPage__textSection">
-                                <p className="portfolioPage__tittle">Gamer Rest</p>
-                                <p>Web de para crear entradas sobre videojuegos y generar contenido sobre los mismos.</p>
-                                <p>Front - Back - DDBB</p>
-                                <p>JavaScript - HTML5 - CSS3 - PostgreSQL - Reajct.js - Node.js - Expres.js</p>
-                            </div>
-                            <div className="portfolioPage__media">
-                                <img className="portfolioPage__webpagePhoto" src={gamerRestPortalImg} alt="Gamer Rest Webpage Frontpage"></img>
-                                <div className="portfolioPage__linkWrap">
-                                    <Link to="https://gamefeed-front.onrender.com/" className="portfolioPage__link" target="_blank" rel="noopener noreferrer">
-                                        Home <FontAwesomeIcon icon={faHouse} className="portfolioPage__icon" />
-                                    </Link>
-                                    <Link to="https://github.com/AGGenius/GameFeed-Front/tree/main" className="portfolioPage__link" target="_blank" rel="noopener noreferrer">
-                                        Front <FontAwesomeIcon icon={faGithub} className="portfolioPage__icon" />
-                                    </Link>
-                                    <Link to="https://github.com/AGGenius/GameFeed-Back" className="portfolioPage__link" target="_blank" rel="noopener noreferrer">
-                                        Back <FontAwesomeIcon icon={faGithub} className="portfolioPage__icon" />
-                                    </Link>
-                                </div>
-                            </div>
-                        </li>
-                        <li className="portfolioPage__card">
-                            <div className="portfolioPage__textSection">
-                                <p className="portfolioPage__tittle">ReactCoin</p>
-                                <p>Web de seguimiento de criptomonedas con funciones para tener un listado de favoritas.</p>
-                                <p>Front</p>
-                                <p>JavaScript - HTML5 - CSS3 - Node.js - Axios.js - react-router-dom</p>
-                            </div>
-                            <div className="portfolioPage__media">
-                                <img className="portfolioPage__webpagePhoto" src={CoinsPortalImg} alt="Gamer Rest Webpage Frontpage"></img>
-                                <div className="portfolioPage__linkWrap">
-                                    <Link to="https://github.com/AGGenius/react-coin" className="portfolioPage__link" target="_blank" rel="noopener noreferrer">
-                                        Front <FontAwesomeIcon icon={faGithub} className="portfolioPage__icon" />
-                                    </Link>
-                                </div>
-                            </div>
-                        </li>
-                        <li className="portfolioPage__card">
-                            <div className="portfolioPage__textSection">
-                                <p className="portfolioPage__tittle">Dashboard</p>
-                                <p>Web con multiples funciones para usar como pagina principal de navegador.</p>
-                                <p>Back</p>
-                                <p>JavaScript - HTML5 - CSS3</p>
-                            </div>
-                            <div className="portfolioPage__media">
-                                <img className="portfolioPage__webpagePhoto" src={dashboardPortalImg} alt="Gamer Rest Webpage Frontpage"></img>
-                                <div className="portfolioPage__linkWrap">
-                                    <Link to="https://aggenius.github.io/project-break-dashboard/html/index.html" className="portfolioPage__link" target="_blank" rel="noopener noreferrer">
-                                        Home <FontAwesomeIcon icon={faHouse} className="portfolioPage__icon" />
-                                    </Link>
-                                    <Link to="https://github.com/AGGenius/project-break-dashboard" className="portfolioPage__link" target="_blank" rel="noopener noreferrer">
-                                        Back <FontAwesomeIcon icon={faGithub} className="portfolioPage__icon" />
-                                    </Link>
-                                </div>
-                            </div>
-                        </li>
-                        <li className="portfolioPage__card">
-                            <div className="portfolioPage__textSection">
-                                <p className="portfolioPage__tittle">Diversión con banderas</p>
-                                <p>Web con todas las banderas de los paises del mundo con función para poder ver datos de interes de cada pais.</p>
-                                <p>Front</p>
-                                <p>JavaScript - HTML5 - CSS3</p>
-                            </div>
-                            <div className="portfolioPage__media">
-                                <img className="portfolioPage__webpagePhoto" src={FlagsPortalImg} alt="Gamer Rest Webpage Frontpage"></img>
-                                <div className="portfolioPage__linkWrap">
-                                    <Link to="https://github.com/AGGenius/diversion-con-banderas" className="portfolioPage__link" target="_blank" rel="noopener noreferrer">
-                                        Front <FontAwesomeIcon icon={faGithub} className="portfolioPage__icon" />
-                                    </Link>
-                                </div>
-                            </div>
-                        </li>
-                        <li className="portfolioPage__card">
-                            <div className="portfolioPage__textSection">
-                                <p className="portfolioPage__tittle">Atomic Chamber</p>
-                                <p>Juego movil para android gratuito con anuncios de logica y puzzles.</p>
-                                <p>Unity 3D - C# - Admob - Logros de Google Play</p>
-                            </div>
-                            <div className="portfolioPage__media">
-                                <img className="portfolioPage__webpagePhoto" src={atomicChamberPortalImg} alt="Gamer Rest Webpage Frontpage"></img>
-                                <div className="portfolioPage__linkWrap">
-                                    <Link to="https://play.google.com/store/apps/details?id=com.com.WildCatta.Atomas.AtomicChamber&hl=es" className="portfolioPage__link" target="_blank" rel="noopener noreferrer">
-                                        GooglePlay <FontAwesomeIcon icon={faHouse} className="portfolioPage__icon" />
-                                    </Link>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                <section className={!loaded ? "portfolioPage__static" : changeCard ? "portfolioPage__cardWrap enter" : "portfolioPage__cardWrap exit"} >
+                    {bigCard === "" &&
+                        <ul className="portfolioPage__list">
+                            <li className="portfolioPage__card" onClick={() => handleBigCard("GamerRest")}>
+                                {<GamerRest />}
+                            </li>
+                            <li className="portfolioPage__card" onClick={() => handleBigCard("ReactCoin")}>
+                                {<ReactCoin />}
+                            </li>
+                            <li className="portfolioPage__card" onClick={() => handleBigCard("Dashboard")}>
+                                {<Dashboard />}
+                            </li>
+                            <li className="portfolioPage__card" onClick={() => handleBigCard("Flags")}>
+                                {<Flags />}
+                            </li>
+                            <li className="portfolioPage__card" onClick={() => handleBigCard("AtomicChamber")}>
+                                {<AtomicChamber />}
+                            </li>
+                        </ul>
+                    }
+                    {bigCard !== "" &&
+                        <div className="portfolioPage__bigCard" onClick={() => handleBigCard("")}>
+                            {bigCard === "GamerRest" && <GamerRestBig />}
+                            {bigCard === "ReactCoin" && <ReactCoin />}
+                            {bigCard === "Dashboard" && <Dashboard />}
+                            {bigCard === "Flags" && <Flags />}
+                            {bigCard === "AtomicChamber" && <AtomicChamber />}
+                        </div>
+                    }
                 </section>
                 <section className="portfolioPage__buttonWrap">
                     <button className="portfolioPage__button" onClick={() => handleClick("/")}>PREV</button>
-                    <p>PORTFOLIO</p>
+                    <h1>PORTFOLIO</h1>
                     <button className="portfolioPage__button" onClick={() => handleClick("/skills")}>NEXT</button>
                 </section>
             </article>
