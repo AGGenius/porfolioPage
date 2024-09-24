@@ -9,9 +9,9 @@ const Flags = () => {
         <>
             <div className="portfolioPage__textSection">
                 <h2 className="portfolioPage__tittle">Diversión con banderas</h2>
-                <p>Web con todas las banderas de los paises del mundo con función para poder ver datos de interes de cada pais.</p>
-                <p>Front</p>
-                <p>JavaScript - HTML5 - CSS3</p>
+                <p>Web con todas las banderas de los paises del mundo y funciones para ver datos de interes de cada pais.</p>
+                <p><b>Front</b></p>
+                <p><b>JavaScript - HTML5 - CSS3</b></p>
             </div>
             <div className="portfolioPage__media">
                 <img className="portfolioPage__webpagePhoto" src={FlagsPortalImg} alt="Gamer Rest Webpage Frontpage"></img>

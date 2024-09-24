@@ -11,8 +11,8 @@ const Dashboard = () => {
             <div className="portfolioPage__textSection">
                 <h2 className="portfolioPage__tittle">Dashboard</h2>
                 <p>Web con multiples funciones para usar como pagina principal de navegador.</p>
-                <p>Back</p>
-                <p>JavaScript - HTML5 - CSS3</p>
+                <p><b>Front</b></p>
+                <p><b>JavaScript - HTML5 - CSS3</b></p>
             </div>
             <div className="portfolioPage__media">
                 <img className="portfolioPage__webpagePhoto" src={dashboardPortalImg} alt="Gamer Rest Webpage Frontpage"></img>
@@ -21,7 +21,7 @@ const Dashboard = () => {
                         Home <FontAwesomeIcon icon={faHouse} className="portfolioPage__icon" />
                     </Link>
                     <Link to="https://github.com/AGGenius/project-break-dashboard" className="portfolioPage__link" target="_blank" rel="noopener noreferrer">
-                        Back <FontAwesomeIcon icon={faGithub} className="portfolioPage__icon" />
+                        Front <FontAwesomeIcon icon={faGithub} className="portfolioPage__icon" />
                     </Link>
                 </div>
             </div>

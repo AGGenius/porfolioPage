@@ -10,7 +10,7 @@ const AtomicChamber = () => {
             <div className="portfolioPage__textSection">
                 <h2 className="portfolioPage__tittle">Atomic Chamber</h2>
                 <p>Juego movil para android gratuito con anuncios de logica y puzzles.</p>
-                <p>Unity 3D - C# - Admob - Logros de Google Play</p>
+                <p><b>Unity 3D - C# - Admob - Logros de Google Play</b></p>
             </div>
             <div className="portfolioPage__media">
                 <img className="portfolioPage__webpagePhoto" src={atomicChamberPortalImg} alt="Gamer Rest Webpage Frontpage"></img>

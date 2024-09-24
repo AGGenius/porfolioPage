@@ -8,7 +8,7 @@ const GamerRestBig = () => {
     return (
         <>
             <div className="portfolioPage__textSection--Big">
-                <h2 className="portfolioPage__tittle--Big">Gamer Rest</h2>
+                <h2 className="portfolioPage__tittle--Big">GAMER REST</h2>
                 <h3 className="portfolioPage__subtittle--Big">Full Stack Web</h3>
                 <p className="portfolioPage__text--Big">
                     Se trata de la primera web que desarrollo para porfolio usando todo lo aprendido en mi formación
@@ -25,7 +25,7 @@ const GamerRestBig = () => {
                 <p className="portfolioPage__text--Big">
                     Su <b>despliegue</b> esta realizado completamente en los servicios de <b>Render</b>.
                 </p>
-                <p className="portfolioPage__text--Big"><b>JavaScript - HTML5 - CSS3 - PostgreSQL - Reajct.js - Node.js - Expres.js - react-router-dom - Context - Visual Studio Code - Git - Render</b></p>
+                <p className="portfolioPage__text--Big"><b>JavaScript - HTML5 - CSS3 - API REST - PostgreSQL - Reajct.js - Node.js - Expres.js - react-router-dom - Context - Visual Studio Code - Git - Render</b></p>
             </div>
             <div className="portfolioPage__media--Big">
                 <img className="portfolioPage__webpagePhoto--Big" src={gamerRestPortalImg} alt="Gamer Rest Webpage Frontpage"></img>

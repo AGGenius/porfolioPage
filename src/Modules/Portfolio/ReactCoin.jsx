@@ -10,8 +10,8 @@ const ReactCoin = () => {
             <div className="portfolioPage__textSection">
                 <h2 className="portfolioPage__tittle">ReactCoin</h2>
                 <p>Web de seguimiento de criptomonedas con funciones para tener un listado de favoritas.</p>
-                <p>Front</p>
-                <p>JavaScript - HTML5 - CSS3 - Node.js - Axios.js - react-router-dom</p>
+                <p><b>Front</b></p>
+                <p><b>JavaScript - HTML5 - CSS3 - Node.js - Axios.js - react-router-dom</b></p>
             </div>
             <div className="portfolioPage__media">
                 <img className="portfolioPage__webpagePhoto" src={CoinsPortalImg} alt="Gamer Rest Webpage Frontpage"></img>

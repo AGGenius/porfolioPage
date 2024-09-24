@@ -11,8 +11,8 @@ const GamerRest = () => {
             <div className="portfolioPage__textSection">
                 <h2 className="portfolioPage__tittle">Gamer Rest</h2>
                 <p>Web de para crear entradas sobre videojuegos y generar contenido sobre los mismos.</p>
-                <p>Front - Back - DDBB</p>
-                <p>JavaScript - HTML5 - CSS3 - PostgreSQL - Reajct.js - Node.js - Expres.js</p>
+                <p><b>Front - Back - DDBB</b></p>
+                <p><b>JavaScript - HTML5 - CSS3 - PostgreSQL - Reajct.js - Node.js - Expres.js</b></p>
             </div>
             <div className="portfolioPage__media">
                 <img className="portfolioPage__webpagePhoto" src={gamerRestPortalImg} alt="Gamer Rest Webpage Frontpage"></img>
