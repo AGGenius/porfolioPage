@@ -6,6 +6,7 @@ import './MainPage.css'
 
 const MainPage = () => {
     const { changePage, setChangePage } = useChangePageContext();
+    const { setActualPage } = useChangePageContext();
     const navigate = useNavigate();
     const [exit, setExit] = useState(false);
     const [cont, setCont] = useState(0);
@@ -24,6 +25,7 @@ const MainPage = () => {
     const handleClick = (page) => {
         setExit(true);
         setChangePage(false);
+        setActualPage(page);
 
         setTimeout(() => {
             navigate(page);

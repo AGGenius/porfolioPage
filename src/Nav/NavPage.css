@@ -15,10 +15,15 @@ nav {
     border-radius: 0 0 15px 0;
 }
 
-nav a {
+.nav__link {
     color: rgb(245, 245, 245);
 }
 
-nav a:hover {  
+.nav__link:hover {  
     color: rgb(198, 227, 236);
+}
+
+.nav__link.selected {
+    color: rgb(220, 240, 247);
+    text-decoration: underline;
 }

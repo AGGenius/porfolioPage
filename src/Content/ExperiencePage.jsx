@@ -5,6 +5,7 @@ import './ExperiencePage.css'
 
 const ExperiencePage = () => {
     const { changePage, setChangePage } = useChangePageContext();
+    const { setActualPage } = useChangePageContext();
     const navigate = useNavigate();
     const [exit, setExit] = useState(false);
     const [cont, setCont] = useState(0);
@@ -23,6 +24,7 @@ const ExperiencePage = () => {
     const handleClick = (page) => {
         setExit(true);
         setChangePage(false);
+        setActualPage(page);
 
         setTimeout(() => {
             navigate(page);

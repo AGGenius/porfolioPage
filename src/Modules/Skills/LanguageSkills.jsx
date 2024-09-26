@@ -1,4 +1,4 @@
-const Language = () => {
+const LanguageSkills = () => {
 
     return (
         <>
@@ -8,4 +8,4 @@ const Language = () => {
         </>)
 }
 
-export default Language;
+export default LanguageSkills;

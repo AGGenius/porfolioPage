@@ -1,4 +1,4 @@
-const Database = () => {
+const DatabaseSkills = () => {
 
     return (
         <>
@@ -8,4 +8,4 @@ const Database = () => {
         </>)
 }
 
-export default Database;
+export default DatabaseSkills;

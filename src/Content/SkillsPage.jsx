@@ -21,21 +21,24 @@ import unityIcon from "../assets/Icons/unity.png";
 import visualIcon from "../assets/Icons/visual.png";
 
 //Modules
-import FrontSkillsPage from "../Modules/Skills/Front";
-import BackSkillsPage from "../Modules/Skills/Back";
-import DatabaseSkillsPage from "../Modules/Skills/Database";
-import LanguageSkillsPage from "../Modules/Skills/Language";
-import SoftSkillsPage from "../Modules/Skills/SoftSkills";
+import WebSkillsPage from "../Modules/Skills/WebSkills.jsx";
+import DatabaseSkillsPage from "../Modules/Skills/DatabaseSkills.jsx";
+import VideogameSkillsPage from "../Modules/Skills/VideogameSkills.jsx";
+import LanguageSkillsPage from "../Modules/Skills/LanguageSkills.jsx";
+import SoftSkillsPage from "../Modules/Skills/SoftSkills.jsx";
 
 
 const SkillsPage = () => {
     const { changePage, setChangePage } = useChangePageContext();
+    const { setActualPage } = useChangePageContext();
     const navigate = useNavigate();
     const [exit, setExit] = useState(false);
     const [cont, setCont] = useState(0);
 
     const [skillPage, setSkillPage] = useState("");
+    const [skillPageSelector, setSkillPageSelector] = useState("");
     const [changeCard, setChangeCard] = useState(false);
+    const [marqueePlay, setMarqueePlay] = useState(false);
 
     useEffect(() => {
         setChangePage(false);
@@ -46,11 +49,16 @@ const SkillsPage = () => {
             setExit(true);
         }
 
+        setTimeout(() => {
+            setMarqueePlay(true);
+        }, 300);
+
     }, [changePage]);
 
     const handleClick = (page) => {
         setExit(true);
         setChangePage(false);
+        setActualPage(page);
 
         setTimeout(() => {
             navigate(page);
@@ -58,65 +66,95 @@ const SkillsPage = () => {
     };
 
     const handleSkillsPage = (newSkillPage) => {
-        if(newSkillPage ===  skillPage) {
+        if (newSkillPage === skillPage) {
             return;
         }
 
         const newPage = newSkillPage;
 
         setChangeCard(true);
+        setSkillPageSelector(newPage);
 
         setTimeout(() => {
             setChangeCard(false);
             setSkillPage(newPage);
-        }, 500); 
+        }, 500);
     }
+
 
     return (
         <div className={!exit ? "skillsPage" : "skillsPage exit"}>
             <div className="skillsPage__space top"></div>
             <article className="skillsPage__content">
                 <section className="skillsPage__topContent">
-                    <Marquee pauseOnHover={true} gradient={true} gradientColor="rgba(182, 190, 226, 0.7)" className="skillsPage__marquee">
-                        <img src={devIcon} alt="web developer icon" className="skillsPage__marquee--img" />
-                        <img src={javascriptIcon} alt="javaScript icon" className="skillsPage__marquee--img" />
-                        <img src={htmlIcon} alt="html icon" className="skillsPage__marquee--img" />
-                        <img src={cssIcon} alt="css icon" className="skillsPage__marquee--img" />
-                        <img src={httpIcon} alt="http icon" className="skillsPage__marquee--img" />
-                        <img src={csharpIcon} alt="charp icon" className="skillsPage__marquee--img" />
-                        <img src={reactIcon} alt="reactjs icon" className="skillsPage__marquee--img" />
-                        <img src={nodeIcon} alt="nodejs icon" className="skillsPage__marquee--img" />
-                        <img src={mysqlIcon} alt="mysql icon" className="skillsPage__marquee--img" />
-                        <img src={postgresIcon} alt="postgresql icon" className="skillsPage__marquee--img" />
-                        <img src={mongodbIcon} alt="mongodb icon" className="skillsPage__marquee--img" />
-                        <img src={unityIcon} alt="unity 3d icon" className="skillsPage__marquee--img" />
-                        <img src={visualIcon} alt="visual studio code icon" className="skillsPage__marquee--img" />
-                        <img src={githubIcon} alt="github icon" className="skillsPage__marquee--img" />
+                    <Marquee pauseOnHover={true} play={marqueePlay} autoFill={true} gradient={true} gradientColor="rgba(163, 174, 223, 0.8)" className="skillsPage__marquee">
+                        <div className="skillsPage__marquee--imgWrap">
+                            <img src={devIcon} alt="web developer icon" className="skillsPage__marquee--img" />
+                        </div>
+                        <div className="skillsPage__marquee--imgWrap">
+                            <img src={javascriptIcon} alt="javaScript icon" className="skillsPage__marquee--img" />
+                        </div>
+                        <div className="skillsPage__marquee--imgWrap">
+                            <img src={htmlIcon} alt="html icon" className="skillsPage__marquee--img" />
+                        </div>
+                        <div className="skillsPage__marquee--imgWrap">
+                            <img src={cssIcon} alt="css icon" className="skillsPage__marquee--img" />
+                        </div>
+                        <div className="skillsPage__marquee--imgWrap">
+                            <img src={httpIcon} alt="http icon" className="skillsPage__marquee--img" />
+                        </div>
+                        <div className="skillsPage__marquee--imgWrap">
+                            <img src={csharpIcon} alt="charp icon" className="skillsPage__marquee--img" />
+                        </div>
+                        <div className="skillsPage__marquee--imgWrap">
+                            <img src={reactIcon} alt="reactjs icon" className="skillsPage__marquee--img" />
+                        </div>
+                        <div className="skillsPage__marquee--imgWrap">
+                            <img src={nodeIcon} alt="nodejs icon" className="skillsPage__marquee--img" />
+                        </div>
+                        <div className="skillsPage__marquee--imgWrap">
+                            <img src={mysqlIcon} alt="mysql icon" className="skillsPage__marquee--img" />
+                        </div>
+                        <div className="skillsPage__marquee--imgWrap">
+                            <img src={postgresIcon} alt="postgresql icon" className="skillsPage__marquee--img" />
+                        </div>
+                        <div className="skillsPage__marquee--imgWrap">
+                            <img src={mongodbIcon} alt="mongodb icon" className="skillsPage__marquee--img" />
+                        </div>
+                        <div className="skillsPage__marquee--imgWrap">
+                            <img src={unityIcon} alt="unity 3d icon" className="skillsPage__marquee--img" />
+                        </div>
+                        <div className="skillsPage__marquee--imgWrap">
+                            <img src={visualIcon} alt="visual studio code icon" className="skillsPage__marquee--img" />
+                        </div>
+                        <div className="skillsPage__marquee--imgWrap">
+                            <img src={githubIcon} alt="github icon" className="skillsPage__marquee--img" />
+                        </div>
                     </Marquee>
                 </section>
                 <section className="skillsPage__mainTextWrap">
                     <ul className="skillsPage__mainTextWrap--list">
-                        <li className="skillsPage__mainTextWrap--item" onClick={() => handleSkillsPage("front")}>
-                            <p>CLIENTE</p>
+                        <li className={skillPageSelector === "web" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("web")}>
+                            <p>WEB</p>
                         </li>
-                        <li className="skillsPage__mainTextWrap--item" onClick={() => handleSkillsPage("back")}>
-                            <p>SERVIDOR</p>
-                        </li>
-                        <li className="skillsPage__mainTextWrap--item" onClick={() => handleSkillsPage("ddbb")}>
+                        <li className={skillPageSelector === "ddbb" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("ddbb")}>
                             <p>DDBB</p>
                         </li>
-                        <li className="skillsPage__mainTextWrap--item" onClick={() => handleSkillsPage("language")}>
+                        <li className={skillPageSelector === "videogames" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("videogames")}>
+                            <p>VIDEOJUEGOS</p>
+                        </li>
+                        <li className={skillPageSelector === "language" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("language")}>
                             <p>IDIOMAS</p>
                         </li>
-                        <li className="skillsPage__mainTextWrap--item" onClick={() => handleSkillsPage("softSkills")}>
+                        <li className={skillPageSelector === "softSkills" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("softSkills")}>
                             <p>SOFT SKILLS</p>
                         </li>
                     </ul>
                     <div className={changeCard ? "skillsPage__mainTex--content exit" : "skillsPage__mainTex--content"}>
-                        {skillPage === "" && <FrontSkillsPage />}
-                        {skillPage === "front" && <FrontSkillsPage />}
-                        {skillPage === "back" && <BackSkillsPage />}
+                        {skillPage === "" && <WebSkillsPage />}
+                        {skillPage === "web" && <WebSkillsPage />}
                         {skillPage === "ddbb" && <DatabaseSkillsPage />}
+                        {skillPage === "videogames" && <VideogameSkillsPage />}
                         {skillPage === "language" && <LanguageSkillsPage />}
                         {skillPage === "softSkills" && <SoftSkillsPage />}
                     </div>

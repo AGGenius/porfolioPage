@@ -4,9 +4,10 @@ const ChangePageContext = createContext();
 
 export const ChangePageProvider = ({children}) => {
     const [changePage, setChangePage] = useState({});
+    const [actualPage, setActualPage] = useState({});
 
     return (
-        <ChangePageContext.Provider value={{changePage, setChangePage}}>
+        <ChangePageContext.Provider value={{changePage, setChangePage, actualPage, setActualPage}}>
             {children}
         </ChangePageContext.Provider>
     );

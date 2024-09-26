@@ -6,27 +6,31 @@ import './NavPage.css'
 
 const NavPage = () => {
     const { setChangePage } = useChangePageContext();
+    const { actualPage, setActualPage } = useChangePageContext();
     const navigate = useNavigate();
     const location = useLocation();
 
     const handleClick = (page) => {
         if (location.pathname !== page) {
+            const nextPage = page;
+
             setChangePage(true);
+            setActualPage(nextPage);
 
             setTimeout(() => {
-                navigate(page);
+                navigate(nextPage);
             }, 400);
         }
     };
 
     return (
         <nav>
-            <a onClick={() => handleClick("/")}>ABOUT</a>
-            <a onClick={() => handleClick("/portfolio")}>PORTFOLIO</a>
-            <a onClick={() => handleClick("/skills")}>SKILLS</a>
-            <a onClick={() => handleClick("/experience")}>EXPERIENCE</a>
-            <a onClick={() => handleClick("/links")}>LINKS</a>
-            <a onClick={() => handleClick("/contact")}>CONTACT</a>
+            <a className={actualPage === "/" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/")}>ABOUT</a>
+            <a className={actualPage === "/portfolio" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/portfolio")}>PORTFOLIO</a>
+            <a className={actualPage === "/skills" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/skills")}>SKILLS</a>
+            <a className={actualPage === "/experience" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/experience")}>EXPERIENCE</a>
+            <a className={actualPage === "/links" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/links")}>LINKS</a>
+            <a className={actualPage === "/contact" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/contact")}>CONTACT</a>
         </nav>)
 }
 
