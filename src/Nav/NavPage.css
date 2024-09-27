@@ -1,0 +1,29 @@
+nav {
+    width: 90%;
+    height: 60px;
+    gap: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(211, 210, 221);
+    background: linear-gradient(90deg, rgb(198, 191, 230) 0%, rgba(139, 139, 223, 1) 35%, rgba(35, 66, 128, 1) 100%);
+
+    border-bottom: 5px solid slateblue;
+    border-right: 5px solid slateblue;
+    border-radius: 0 0 15px 0;
+}
+
+.nav__link {
+    color: rgb(245, 245, 245);
+}
+
+.nav__link:hover {  
+    color: rgb(198, 227, 236);
+}
+
+.nav__link.selected {
+    color: rgb(220, 240, 247);
+    text-decoration: underline;
+}
