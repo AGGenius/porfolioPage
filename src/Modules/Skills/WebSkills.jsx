@@ -25,7 +25,7 @@ const WebSkills = () => {
                     <div className="skillsPage__imgWrap">
                         <img className="skillsPage__img" src={ExampleImg} alt="full stack web development" />
                         <p className="skillsPage__imgCreator">
-                            <a href="https://www.freepik.com/free-vector/two-developers-working-with-big-data-technology-big-data-management-storage-database-analytics-design-data-software-engineering-concept-vector-isolated-illustration_11668623.htm#fromView=search&page=1&position=13&uuid=dbd92fdc-0615-4836-b5bc-5bc2c6c1f10f">Image by vectorjuice on Freepik</a>
+                            <a className="skillsPage__imgCreator--link" href="https://www.freepik.com/free-vector/two-developers-working-with-big-data-technology-big-data-management-storage-database-analytics-design-data-software-engineering-concept-vector-isolated-illustration_11668623.htm#fromView=search&page=1&position=13&uuid=dbd92fdc-0615-4836-b5bc-5bc2c6c1f10f">Image by vectorjuice on Freepik</a>
                         </p>
                     </div>
                 </div>

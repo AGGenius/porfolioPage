@@ -36,7 +36,7 @@ const SkillsPage = () => {
     const [cont, setCont] = useState(0);
 
     const [skillPage, setSkillPage] = useState("");
-    const [skillPageSelector, setSkillPageSelector] = useState("");
+    const [skillPageSelector, setSkillPageSelector] = useState("web");
     const [changeCard, setChangeCard] = useState(false);
     const [marqueePlay, setMarqueePlay] = useState(false);
 

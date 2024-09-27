@@ -57,7 +57,7 @@ const MainPage = () => {
                         Como no puedo frenar mi sed de conocimientos, di otro pequeño giro hacia la programación web, realizando un intenso bootcamp como <span className="mainPage__paraContent__bold">full stack web developer</span>,
                         que fui complementando por mi cuenta.
                     </p>
-                    <p className="mainPage__paraQuestion">¿Pero te gustarán más cosas en la vida, no?</p>
+                    <p className="mainPage__paraQuestion">¿Pero me gustarán más cosas en la vida, no?</p>
                     <p className="mainPage__paraContent">
                         Para esto necesitaría un buen rato, pero seré breve… Juego a videojuegos <span className="mainPage__paraContent__italic">(RPG, puzles, aventura, metroidvania, etc)</span>,
                         me gusta leer <span className="mainPage__paraContent__italic">(ciencia ficción, fantasía, misterio, terror, etc)</span>, aprender sobre tecnología y ciencia espacial <span className="mainPage__paraContent__italic">(Go Space X! 🚀)</span>,
