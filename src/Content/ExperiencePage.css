@@ -1,4 +1,16 @@
-.experiencePage { 
+@property --backgroundColor1 {
+    syntax: '<color>';
+    initial-value: rgb(166, 165, 219);
+    inherits: false;
+}
+
+@property --backgroundColor2 {
+    syntax: '<color>';
+    initial-value: rgb(153, 140, 224);
+    inherits: false;
+}
+
+.experiencePage {
     width: 100%;
     height: 100%;
 
@@ -14,16 +26,17 @@
     animation: changePageAnimation .4s linear forwards;
 }
 
-.experiencePage__space, .top{
+.experiencePage__space,
+.top {
     width: 90%;
     height: 5%;
 }
 
-.experiencePage__space.top{  
+.experiencePage__space.top {
     border-left: 5px solid slateblue;
 }
 
-.experiencePage__space.bottom{  
+.experiencePage__space.bottom {
     border-right: 5px solid slateblue;
 }
 
@@ -32,34 +45,195 @@
     height: 100%;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     background-color: rgb(166, 165, 219);
-    
+    color: rgb(37, 37, 51);
+
     border: 5px solid slateblue;
     border-top: 2px solid slateblue;
     border-right: 2px solid slateblue;
     border-radius: 0 15px 0 15px;
 }
 
-.experiencePage__button {
-    width: 50px;
+.experiencePage__time {
+    width: 100%;
     height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: linear-gradient(to right, var(--backgroundColor1), rgb(190, 200, 255));
+    border-bottom: 2px solid slateblue;
+    border-radius: 0 15px 0 0;
+
+    font-weight: bold;
+    padding: 0 5rem;
+}
+
+.experiencePage__time--year {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(222, 229, 255);
+}
+
+.experiencePage__time--year:last-child {
+    color: rgb(15, 17, 68);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.experiencePage__text {
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experiencePage__list {
+    width: 100%;
+    height: 100%;
+    gap: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experiencePage__listItem {
+    width: 22%;
+    height: 95%;
+    gap: .8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: rgb(45, 45, 63);
+    font-size: 1.1rem;
+
+    background-image: linear-gradient(to right, var(--backgroundColor1), var(--backgroundColor2));
+    border-radius: 0 15px 15px 0;
+
+    padding: .5rem;
+    padding-top: 2rem;
+
+    transition: --backgroundColor2 .3s, scale .5s;
+}
+
+.experiencePage__listItem:hover {
+    --backgroundColor2: rgb(210, 209, 236);
+    scale: 1.2;
+
+    transition: --backgroundColor2 .3s, scale .5s;
+}
+
+.experiencePage__list-tittle {
+    width: 100%;
+    height: auto;
+
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.experiencePage__list--subtittle {
+    width: 100%;
+    height: auto;
+
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(64, 64, 90);
+}
+
+.experiencePage__list--time {
+    width: 100%;
+    height: auto;
+
+    font-size: 1.2rem;
+    color: rgb(64, 64, 90);
+}
+
+.experiencePage__list--position {
+    width: 100%;
+    height: auto;
+
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.experiencePage__list--content {
+    width: 100%;
+    height: auto;
+
+    font-size: .9rem;
+
+    text-align: left;
+}
+
+
+.experiencePage__buttonWrap {
+    width: 100%;
+    height: 10%;
+    gap: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experiencePage__button {
+    width: 60px;
+    height: 40px;
 
     border-radius: 50%;
 }
 
 @keyframes changePageAnimationIntro {
-    0% {opacity: 0;  transform: scaleX(0);}
-    50%  {opacity: .5; transform: scaleX(1);}
-    75% {opacity: 1; }
-    100% {opacity: 1; transform: scaleX(1);}
+    0% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    50% {
+        opacity: .5;
+        transform: scaleX(1);
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
 }
 
 @keyframes changePageAnimation {
-    0% {opacity: 1;  transform: scaleX(1);}
-    50%  {opacity: .5; transform: scaleX(.5);}
-    75% {opacity: 0; }
-    100% {opacity: 0; transform: scaleX(0);}
+    0% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+
+    50% {
+        opacity: .5;
+        transform: scaleX(.5);
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
 }

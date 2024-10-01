@@ -1,3 +1,15 @@
+@property --backgroundColor1 {
+    syntax: '<color>';
+    initial-value: rgb(166, 165, 219);
+    inherits: false;
+}
+
+@property --backgroundColor2 {
+    syntax: '<color>';
+    initial-value: rgb(153, 140, 224);
+    inherits: false;
+}
+
 .linksPage { 
     width: 100%;
     height: 100%;
@@ -32,6 +44,7 @@
     height: 100%;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -43,9 +56,100 @@
     border-radius: 0 15px 0 15px;
 }
 
+.linksPage__linksWrap {
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linksPage__list {
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.linksPage__listItem {
+    width: 100%;
+    height: 100%;
+    gap: 5rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-image: linear-gradient(to right, var(--backgroundColor1), var(--backgroundColor2));
+    border-radius: 0 15px 15px 0;
+    border-left: 10px solid slateblue;
+    transition: --backgroundColor2 .3s, border-left .3s;
+
+    padding-left: 2rem;
+}
+
+.linksPage__listItem:hover {
+    --backgroundColor2: rgb(210, 209, 236);
+    border-left: 10px solid rgb(156, 145, 226);
+    transition: --backgroundColor2 .3s, border-left .3s;
+}
+
+.linksPage__link {
+    width: 80%;
+    height: 120px;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-left: 2rem;
+}
+
+.linksPage__linkText {
+    width: 200px;
+
+    color: rgb(10, 4, 65);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.linksPage__linkSubtext {
+    width: 400px;
+
+    color: rgb(74, 69, 122);
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.linksPage__linkImg {
+    width: 200px;
+    height: 110px;
+
+    object-fit: contain;
+
+    border-radius: 50px;
+}
+
+.linksPage__buttonWrap {
+    width: 100%;
+    height: 10%;
+    gap: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .linksPage__button {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 40px;
 
     border-radius: 50%;
 }
