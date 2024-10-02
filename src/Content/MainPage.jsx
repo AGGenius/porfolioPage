@@ -77,9 +77,9 @@ const MainPage = () => {
                     </p>
                 </section>
                 <section className="mainPage__buttonWrap">
-                    <button className="mainPage__button" onClick={() => handleClick("/contact")}>PREV</button>
+                    <button className="mainPage__button" onClick={() => handleClick("/contact")}>CONTACTO</button>
                     <p>¡Echale un vistazo al resto para saber más!</p>
-                    <button className="mainPage__button" onClick={() => handleClick("/portfolio")}>NEXT</button>
+                    <button className="mainPage__button" onClick={() => handleClick("/portfolio")}>PORTFOLIO</button>
                 </section>
                 <img className={!exit ? "mainPage__photo" : "mainPage__photo exit"} src={photo} alt="CV Photo" onClick={() => handleImageClick()} />
             </article>

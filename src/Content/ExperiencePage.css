@@ -190,10 +190,27 @@
 }
 
 .experiencePage__button {
-    width: 60px;
-    height: 40px;
+    width: 120px;
+    height: 35px;
 
-    border-radius: 50%;
+    color: blanchedalmond;
+    font-size: .8rem;
+    font-weight: bold;
+
+    background-color: rgb(111, 146, 223);
+    border: 2px solid rgb(70, 62, 180);
+    border-radius: 50px;
+
+    transition: all .3s;
+}
+
+.experiencePage__button:hover {
+    color: rgb(45, 26, 87);
+
+    background-color: rgb(179, 197, 236);
+    border: 2px solid rgb(62, 89, 180);
+
+    transition: all .3s;
 }
 
 @keyframes changePageAnimationIntro {

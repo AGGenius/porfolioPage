@@ -74,9 +74,9 @@ const LinksPage = () => {
                     </ul>
                 </section>
                 <section className="linksPage__buttonWrap">
-                    <button className="linksPage__button" onClick={() => handleClick("/experience")}>PREV</button>
+                    <button className="linksPage__button" onClick={() => handleClick("/experience")}>EXPERIENCIA</button>
                     <p>¡No todo puede contenerse en una unica web!</p>
-                    <button className="linksPage__button" onClick={() => handleClick("/contact")}>NEXT</button>
+                    <button className="linksPage__button" onClick={() => handleClick("/contact")}>CONTACTO</button>
                 </section>
             </article>
             <div className="linksPage__space bottom"></div>

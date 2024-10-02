@@ -197,9 +197,9 @@ const ExperiencePage = () => {
                     </ul>
                 </section>
                 <section className="experiencePage__buttonWrap">
-                    <button className="experiencePage__button" onClick={() => handleClick("/skills")}>PREV</button>
+                    <button className="experiencePage__button" onClick={() => handleClick("/skills")}>SKILLS</button>
                     <p>Una coleccion de experiencias profesionales</p>
-                    <button className="experiencePage__button" onClick={() => handleClick("/links")}>NEXT</button>
+                    <button className="experiencePage__button" onClick={() => handleClick("/links")}>ENLACES</button>
                 </section>
             </article>
             <div className="experiencePage__space bottom"></div>

@@ -93,9 +93,9 @@ const PortfolioPage = () => {
                     }
                 </section>
                 <section className="portfolioPage__buttonWrap">
-                    <button className="portfolioPage__button" onClick={() => handleClick("/")}>PREV</button>
+                    <button className="portfolioPage__button" onClick={() => handleClick("/")}>SOBRE MI</button>
                     <h1>Aquí tienes ejemplos de mi desarrollo como programador</h1>
-                    <button className="portfolioPage__button" onClick={() => handleClick("/skills")}>NEXT</button>
+                    <button className="portfolioPage__button" onClick={() => handleClick("/skills")}>SKILLS</button>
                 </section>
             </article>
             <div className="portfolioPage__space bottom"></div>
