@@ -1,6 +1,6 @@
 footer {
     width: 90%;
-    height: 60px;
+    min-height: 60px;
     gap: 1rem;
 
     display: flex;
@@ -20,4 +20,10 @@ footer {
 footer p {
     color: rgb(245, 245, 245);
     font-size: .9rem;
+}
+
+@media screen and (max-width: 1200px) {
+    footer {
+        min-height: 50px;
+    }
 }

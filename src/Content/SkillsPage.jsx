@@ -141,7 +141,7 @@ const SkillsPage = () => {
                             <p>DDBB</p>
                         </li>
                         <li className={skillPageSelector === "videogames" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("videogames")}>
-                            <p>VIDEOJUEGOS</p>
+                            <p>JUEGOS</p>
                         </li>
                         <li className={skillPageSelector === "language" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("language")}>
                             <p>IDIOMAS</p>
@@ -160,9 +160,9 @@ const SkillsPage = () => {
                     </div>
                 </section>
                 <section className="skillsPage__buttonWrap">
-                    <button className="skillsPage__button" onClick={() => handleClick("/portfolio")}>PREV</button>
+                    <button className="skillsPage__button" onClick={() => handleClick("/portfolio")}>PORTFOLIO</button>
                     <p>Todo un repertorio de habilidades</p>
-                    <button className="skillsPage__button" onClick={() => handleClick("/experience")}>NEXT</button>
+                    <button className="skillsPage__button" onClick={() => handleClick("/experience")}>EXPERIENCIA</button>
                 </section>
             </article>
             <div className="skillsPage__space bottom"></div>
