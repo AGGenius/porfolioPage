@@ -141,7 +141,7 @@ const SkillsPage = () => {
                             <p>DDBB</p>
                         </li>
                         <li className={skillPageSelector === "videogames" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("videogames")}>
-                            <p>VIDEOJUEGOS</p>
+                            <p>JUEGOS</p>
                         </li>
                         <li className={skillPageSelector === "language" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("language")}>
                             <p>IDIOMAS</p>

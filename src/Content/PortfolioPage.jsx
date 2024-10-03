@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useChangePageContext } from "../Context/useChangePageContext";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import './PortfolioPage.css'
 
 import GamerRest from "../Modules/Portfolio/GamerRest";
@@ -24,6 +24,8 @@ const PortfolioPage = () => {
     const [bigCard, setBigCard] = useState("");
     const [changeCard, setChangeCard] = useState(false);
     const [loaded, setLoaded] = useState(false);
+    
+    const scrollableRef = useRef(null);
 
     useEffect(() => {
         setChangePage(false);
@@ -50,7 +52,7 @@ const PortfolioPage = () => {
         const actualState = portfolioCard;
         const actualChange = changeCard;
         setLoaded(true);
-
+        scrollableRef.current.scrollTo(0,0, {behavior: 'smooth'});
         setChangeCard(!actualChange);
 
         setTimeout(() => {
@@ -61,7 +63,7 @@ const PortfolioPage = () => {
     return (
         <div className={!exit ? "portfolioPage" : "portfolioPage exit"}>
             <div className="portfolioPage__space top"></div>
-            <article className="portfolioPage__content">
+            <article ref={scrollableRef} className="portfolioPage__content">
                 <section className={!loaded ? "portfolioPage__static" : changeCard ? "portfolioPage__cardWrap enter" : "portfolioPage__cardWrap exit"} >
                     {bigCard === "" &&
                         <ul className="portfolioPage__list">
@@ -94,7 +96,7 @@ const PortfolioPage = () => {
                 </section>
                 <section className="portfolioPage__buttonWrap">
                     <button className="portfolioPage__button" onClick={() => handleClick("/")}>SOBRE MI</button>
-                    <h1>Aquí tienes ejemplos de mi desarrollo como programador</h1>
+                    <p>Ejemplos de mi desarrollo como programador</p>
                     <button className="portfolioPage__button" onClick={() => handleClick("/skills")}>SKILLS</button>
                 </section>
             </article>

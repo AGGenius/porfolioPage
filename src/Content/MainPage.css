@@ -146,13 +146,15 @@
     transition: all .3s;
 }
 
-.mainPage__photo {
-    width: 100px;
-    height: auto;
-
+.mainPage__photoWrap {
     position: absolute;
     align-self: normal;
     top: 12%;
+}
+
+.mainPage__photo {
+    width: 100px;
+    height: auto;
 
     border-radius: 25px;
     border: 2px solid rgb(49, 38, 68);
@@ -220,4 +222,87 @@
     50%  {opacity: 0; transform: scaleX(1)}
     75% {opacity: .1;  transform: scaleX(1)}
     100% {opacity: 1; display: flex}
+}
+
+@media screen and (max-width: 1200px) {
+    .mainPage__content {
+        justify-content: flex-start;
+
+        overflow: scroll;
+
+        padding-bottom: 1rem;
+    }
+    
+    .mainPage__text {
+        width: 100%;
+        height: auto;
+        gap: .8rem;
+
+        justify-content: flex-start;
+    
+        padding: 1.5rem;
+    }
+
+    .mainPage__mainTittle {
+        font-size: 2rem;
+    }
+    
+    .mainPage__subTittle {
+        font-size: 1.2rem;
+    }
+    
+    .mainPage__tittleClosure {
+        font-size: 1rem;
+    }
+    
+    .mainPage__paraQuestion {
+        width: 100%;
+
+        font-size: 1rem;
+    
+        margin-top: 1rem;
+    }
+    
+    .mainPage__paraQuestion:first-child {
+        margin-top: 0;
+    }
+    
+    .mainPage__paraContent {
+        width: 100%;
+    
+        font-size: .9rem;
+    }
+
+    .mainPage__buttonWrap {
+        width: 90%;
+        height: 50px;
+        gap: 1rem;
+    }
+
+    .mainPage__buttonWrap p{
+        width: 120px;
+        
+        font-size: .7rem;
+    }
+
+    .mainPage__photoWrap {
+        position: static;
+    }
+
+    .mainPage__photo {
+        margin-top: 1.5rem;
+        margin-left: 0;
+    }
+    
+    .mainPage__photoBigWrap {
+        align-items: flex-start;
+
+        top: 0;
+
+        padding-top: 100px;
+    }
+    
+    .mainPage__photoBig {
+        width: 90%;
+    }
 }

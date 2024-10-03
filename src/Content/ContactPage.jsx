@@ -99,8 +99,8 @@ const ContactPage = () => {
                     </form>
                 </section>
                 <section className="contactPage__contactData">
-                    <p className="contactPage__contactData--text"><b>Telefono: </b> 661 34 86 16</p>
-                    <p className="contactPage__contactData--text"><b>Correo: </b> adrianginergimenez@gmail.com</p>
+                    <p className="contactPage__contactData--text"><b>Telefono:</b> 661 34 86 16</p>
+                    <p className="contactPage__contactData--text"><b>Correo:</b> adrianginergimenez@gmail.com</p>
                 </section>
                 <section className="contactPage__buttonWrap">
                     <button className="contactPage__button" onClick={() => handleClick("/links")}>ENLACES</button>

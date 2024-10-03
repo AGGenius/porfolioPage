@@ -41,6 +41,9 @@ const MainPage = () => {
         <main className={!exit ? "mainPage" : "mainPage exit"}>
             <div className="mainPage__space top"></div>
             <article className="mainPage__content">
+                <section className="mainPage__photoWrap">
+                    <img className={!exit ? "mainPage__photo" : "mainPage__photo exit"} src={photo} alt="CV Photo" onClick={() => handleImageClick()} />
+                </section>
                 <section className="mainPage__text">
                     <h2 className="mainPage__mainTittle">¡BIENVENID@!</h2>
                     <h3 className="mainPage__subTittle">Te encuentras en mi pagina de referencia. Aquí podras saber un poco más de mi y mis proyectos.</h3>
@@ -81,11 +84,10 @@ const MainPage = () => {
                     <p>¡Echale un vistazo al resto para saber más!</p>
                     <button className="mainPage__button" onClick={() => handleClick("/portfolio")}>PORTFOLIO</button>
                 </section>
-                <img className={!exit ? "mainPage__photo" : "mainPage__photo exit"} src={photo} alt="CV Photo" onClick={() => handleImageClick()} />
             </article>
             {photoBig &&
                 <div className="mainPage__photoBigWrap">
-                    <img className="mainPage__photoBig" src={photo} alt="CV Photo Big" onClick={() => handleImageClick()}/>
+                    <img className="mainPage__photoBig" src={photo} alt="CV Photo Big" onClick={() => handleImageClick()} />
                 </div>
             }
             <div className="mainPage__space bottom"></div>
