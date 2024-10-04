@@ -685,4 +685,101 @@ b {
     
         text-align: right;
     }
+
+    /* Languages */
+
+    .skillsPage__listWrap {
+        width: 100%;
+        height: 100%;
+        gap: 4rem;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        margin-bottom: 2rem;
+    }
+
+    .skillsPage__list {
+        width: 95%;
+        height: auto;
+        gap: 1.5rem;
+    }
+    
+    .skillsPage__list--item {
+        width: 100%;
+    
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .skillsPage__listTittle {
+        padding: 0;
+    }
+
+    .skillsPage__flagIcon {
+        margin-right: 1rem;
+    }
+
+    .skillsPage__text {
+        text-align: left;
+    }
+
+    .skillsPage__text--small {
+        text-align: center;
+    }
+
+    .skillsPage__text--small {
+        padding: 0;
+    }
+
+    /* Soft Skills */
+
+    .skillsPage__listWrap--row {
+        width: 95%;
+    
+        flex-direction: column;
+    
+        padding: 0;
+    }
+
+    .skillsPage__list--row {
+        width: 100%;
+        height: auto;
+        gap: 1rem;
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .skillsPage__list--row li {
+        width: 100%;
+    }
+
+    .skillsPage__textSoft {    
+        text-align: center;
+    
+        padding: 0;
+    }
+
+    .skillsPage__textSoftTexWrap {
+        width: 100%;
+        height: auto;
+        gap: 1rem;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        margin: 1rem 0;
+    }
+
+    .skillsPage__textSoftTexWrap .skillsPage__text {
+        text-align: center;
+    }
 }

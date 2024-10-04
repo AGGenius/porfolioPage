@@ -36,7 +36,7 @@ const ExperiencePage = () => {
             <div className="experiencePage__space top"></div>
             <article className="experiencePage__content">
                 <section className="experiencePage__time">
-                <p className="experiencePage__time--year">HOY</p>
+                    <p className="experiencePage__time--year">HOY</p>
                     <p className="experiencePage__time--year">2018</p>
                 </section>
                 <section className="experiencePage__text">
@@ -79,7 +79,7 @@ const ExperiencePage = () => {
                             <p className="experiencePage__list--content">
                                 - Desarrollo de tests programaticos.
                             </p>
-                            <p className="experiencePage__list--content">
+                            <p className="experiencePage__list--content tech">
                                 <b>Visual Studio - Unity 3D - C# - JavaScript - HTML - CSS - SQL - MongoDB - GIT - React.js</b>
                             </p>
                         </li>
@@ -108,7 +108,7 @@ const ExperiencePage = () => {
                             <p className="experiencePage__list--content">
                                 - Refactorización de código.
                             </p>
-                            <p className="experiencePage__list--content">
+                            <p className="experiencePage__list--content  tech">
                                 <b>Visual Studio - Unity 3D - C# - Plastic SCM.</b>
                             </p>
                         </li>
@@ -149,7 +149,7 @@ const ExperiencePage = () => {
                                 - Registrar hoja instalaciones de enlace en las peticiones aceptadas por
                                 terceros.
                             </p>
-                            <p className="experiencePage__list--content">
+                            <p className="experiencePage__list--content  tech">
                                 <b>Suite Ofimática Windows Office, SAP, herramientas internas.</b>
                             </p>
                         </li>
@@ -190,7 +190,7 @@ const ExperiencePage = () => {
                                 - Registrar hoja instalaciones de enlace en las peticiones aceptadas por
                                 terceros.
                             </p>
-                            <p className="experiencePage__list--content">
+                            <p className="experiencePage__list--content  tech">
                                 <b>Suite Ofimática Windows Office, SAP, herramientas internas.</b>
                             </p>
                         </li>

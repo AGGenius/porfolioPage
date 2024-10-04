@@ -77,6 +77,17 @@
     align-items: flex-start;
 }
 
+.linksPage__link {
+    width: 80%;
+    height: 120px;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-left: 2rem;
+}
+
 .linksPage__listItem {
     width: 100%;
     height: 100%;
@@ -98,17 +109,6 @@
     --backgroundColor2: rgb(210, 209, 236);
     border-left: 10px solid rgb(156, 145, 226);
     transition: --backgroundColor2 .3s, border-left .3s;
-}
-
-.linksPage__link {
-    width: 80%;
-    height: 120px;
-    
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    padding-left: 2rem;
 }
 
 .linksPage__linkText {
@@ -183,4 +183,96 @@
     50%  {opacity: .5; transform: scaleX(.5);}
     75% {opacity: 0; }
     100% {opacity: 0; transform: scaleX(0);}
+}
+
+@media screen and (max-width: 1200px) {
+    .linksPage__content {
+        justify-content: flex-start;
+
+        overflow: scroll;
+
+        padding-bottom: 1rem;
+    }
+
+    .linksPage__linksWrap {
+        height: auto;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 2rem 0;
+    }
+
+    .linksPage__list {
+        gap: 2rem;
+
+        align-items: center;
+    }
+
+    .linksPage__link {
+        width: 80%;
+        height: auto;
+        
+        justify-content: center;
+    
+        padding-left: 0;
+    }
+
+    .linksPage__listItem {
+        min-height: 450px;
+    
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        background-image: linear-gradient(to bottom, var(--backgroundColor1), var(--backgroundColor2));
+        border-radius: 0 0 15px 15px;
+        border-top: 10px solid slateblue;
+        border-left: none;
+        transition: --backgroundColor2 .3s, border-left .3s;
+        
+        padding: .5rem;
+    }
+
+    .linksPage__listItem:hover {
+        --backgroundColor2: var(--backgroundColor2);
+        border-left: none;
+        transition: none;
+    }
+
+    .linksPage__linkText {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .linksPage__linkSubtext {
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+
+        padding: 1rem;
+    }
+    
+    .linksPage__linkImg {
+        width: 95%;
+        height: 110px;
+    
+        object-fit: contain;
+    
+        border-radius: 50px;
+    }
+
+    .linksPage__buttonWrap {
+        width: 90%;
+        height: 50px;
+        gap: 1rem;
+    }
+    
+    .linksPage__buttonWrap p{
+        width: 120px;
+        
+        font-size: .7rem;
+    }
 }

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useChangePageContext } from "../Context/useChangePageContext";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import './NavPage.css'
 
@@ -12,6 +12,22 @@ const NavPage = () => {
 
     //menu
     const [colapsedMenu, setColapsedMenu] = useState(false);
+    const newRef = useRef(null);
+
+    useEffect(() => {
+        document.addEventListener("mousedown", handleOutsideClick);
+        setActualPage("/");
+
+        return () => {
+            document.removeEventListener("mousedown", handleOutsideClick);
+        };
+    }, []);
+
+    const handleOutsideClick = (e) => {
+        if (newRef.current && !newRef.current.contains(e.target)) {
+            setColapsedMenu(false);
+        }
+    };
 
     const handleClick = (page) => {
         if (location.pathname !== page) {
@@ -19,11 +35,12 @@ const NavPage = () => {
 
             setChangePage(true);
             setActualPage(nextPage);
+            setColapsedMenu(false);
 
             setTimeout(() => {
                 navigate(nextPage);
             }, 400);
-        }
+        };
     };
 
     const navLinks = () => {
@@ -35,18 +52,20 @@ const NavPage = () => {
                 <a className={actualPage === "/experience" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/experience")}>EXPERIENCIA</a>
                 <a className={actualPage === "/links" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/links")}>ENLACES</a>
                 <a className={actualPage === "/contact" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/contact")}>CONTACTO</a>
-            </>)
-    }
+            </>
+        );
+    };
 
     const baseNav = () => {
         return (
             <div className="nav__base">
                 {navLinks()}
-            </div>)
-    }
+            </div>
+        );
+    };
 
     return (
-        <nav className={colapsedMenu && "colapsed"}>
+        <nav className={colapsedMenu ? "colapsed" : ""} ref={newRef}>
             <div className="nav__colapsedMenuButton" onClick={() => { setColapsedMenu(!colapsedMenu) }}>
                 <div className="nav__colapsedMenuButton--row"></div>
                 <div className="nav__colapsedMenuButton--row"></div>
@@ -55,7 +74,7 @@ const NavPage = () => {
             {!colapsedMenu && baseNav()}
             {colapsedMenu && navLinks()}
         </nav>
-    )
-}
+    );
+};
 
 export default NavPage;

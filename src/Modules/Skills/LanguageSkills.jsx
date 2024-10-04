@@ -11,58 +11,58 @@ const LanguageSkills = () => {
                 <div className="skillsPage__contentWrap">
                     <div className="skillsPage__listWrap">
                         <ul className="skillsPage__list">
-                            <li className="skillsPage__tittleWrap">
+                            <li className="skillsPage__tittleWrap skillsPage__list--item">
                                 <h3 className="skillsPage__listTittle">ESPAÑOL</h3>
                                 <img className="skillsPage__flagIcon" src={SpanishFlag} />
                             </li>
-                            <li>
+                            <li className="skillsPage__list--item">
                                 <p className="skillsPage__text"><b>Lectura:</b> Nativo</p>
                             </li>
-                            <li>
+                            <li className="skillsPage__list--item">
                                 <p className="skillsPage__text"><b>Escritura:</b> Nativo</p>
                             </li>
-                            <li>
+                            <li className="skillsPage__list--item">
                                 <p className="skillsPage__text"><b>Conversación:</b> Nativo</p>
                             </li>
-                            <li>
+                            <li className="skillsPage__list--item">
                                 <p className="skillsPage__text--small">Se trata del lenguaje oficial de mi pais y con el que comencé a desenvolverme. </p>
                             </li>
                         </ul>
                         <ul className="skillsPage__list">
-                            <li className="skillsPage__tittleWrap">
+                            <li className="skillsPage__tittleWrap skillsPage__list--item">
                                 <h3 className="skillsPage__listTittle">INGLES</h3>
                                 <img className="skillsPage__flagIcon" src={EnglishFlag} />
                             </li>
-                            <li>
+                            <li className="skillsPage__list--item">
                                 <p className="skillsPage__text"><b>Lectura:</b> Alto</p>
                             </li>
-                            <li>
+                            <li className="skillsPage__list--item">
                                 <p className="skillsPage__text"><b>Escritura:</b> Alto</p>
                             </li>
-                            <li>
+                            <li className="skillsPage__list--item">
                                 <p className="skillsPage__text"><b>Conversación:</b> Intermedio</p>
                             </li>
-                            <li>
+                            <li className="skillsPage__list--item">
                                 <p className="skillsPage__text--small">En el camino a la certificación por una escuela oficial, sin miedo a ver series o peliculas inglesas
                                     en su idioma original, leer libros o buscar información relevante.
                                 </p>
                             </li>
                         </ul>
                         <ul className="skillsPage__list">
-                            <li className="skillsPage__tittleWrap">
+                            <li className="skillsPage__tittleWrap skillsPage__list--item">
                                 <h3 className="skillsPage__listTittle">VALENCIANO</h3>
                                 <img className="skillsPage__flagIcon" src={ValencianFlag} />
                             </li>
-                            <li>
+                            <li className="skillsPage__list--item">
                                 <p className="skillsPage__text"><b>Lectura:</b> Alto</p>
                             </li>
-                            <li>
+                            <li className="skillsPage__list--item">
                                 <p className="skillsPage__text"><b>Escritura:</b> Alto</p>
                             </li>
-                            <li>
+                            <li className="skillsPage__list--item">
                                 <p className="skillsPage__text"><b>Conversación:</b> Alto</p>
                             </li>
-                            <li>
+                            <li className="skillsPage__list--item">
                                 <p className="skillsPage__text--small">Otro de los idiomas de mi tierra, mas concretamente de la región donde nací.
                                 </p>
                             </li>

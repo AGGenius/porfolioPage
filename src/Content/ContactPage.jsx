@@ -104,7 +104,7 @@ const ContactPage = () => {
                 </section>
                 <section className="contactPage__buttonWrap">
                     <button className="contactPage__button" onClick={() => handleClick("/links")}>ENLACES</button>
-                    <p>¿Quieres comentarme algo? Adelante</p>
+                    <p>¿Quieres comentarme algo?</p>
                     <button className="contactPage__button" onClick={() => handleClick("/")}>SOBRE MI</button>
                 </section>
             </article>
