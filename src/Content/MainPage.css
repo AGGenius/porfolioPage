@@ -100,16 +100,8 @@
     color: rgb(48, 46, 53);
 }
 
-.mainPage__paraContent__italic {
+i {
     font-style: italic;
-}
-
-.mainPage__paraContent__bold {
-    font-weight: bold;
-}
-
-.mainPage__paraContent__under {
-    text-decoration: underline;
 }
 
 .mainPage__buttonWrap {

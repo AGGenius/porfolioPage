@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useChangePageContext } from "../Context/useChangePageContext";
 import { useEffect, useState } from "react";
+import { useTranslation, Trans } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import './ContactPage.css'
 
@@ -10,6 +11,9 @@ const ContactPage = () => {
     const navigate = useNavigate();
     const [exit, setExit] = useState(false);
     const [cont, setCont] = useState(0);
+
+    //language
+    const { t } = useTranslation();
 
     //email
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -77,35 +81,61 @@ const ContactPage = () => {
             <article className="contactPage__content">
                 <section className="contactPage__formWrap">
                     <form className="contactPage__form" onSubmit={sendEmail}>
-                        <h2 className="contactPage__form--tittle">Puedes usar el siguiente formulario para enviarme un correo</h2>
+                        <h2 className="contactPage__form--tittle">
+                            {t("contact.sendEmail.tittle")}
+                        </h2>
                         <div className="contactPage__form--field">
-                            <label className="contactPage__form--label" htmlFor="contactName">Nombre</label>
+                            <label className="contactPage__form--label" htmlFor="contactName">
+                                {t("contact.sendEmail.label1")}
+                            </label>
                             <input required className="contactPage__form--input" id="contactName" type="text" name="user_name" />
                         </div>
                         <div className="contactPage__form--field">
-                            <label className="contactPage__form--label" htmlFor="contactEmail">Email</label>
+                            <label className="contactPage__form--label" htmlFor="contactEmail">
+                                {t("contact.sendEmail.label2")}
+                            </label>
                             <input required className="contactPage__form--input" id="contactEmail" type="email" name="user_email" />
                         </div>
                         <div className="contactPage__form--field">
-                            <label className="contactPage__form--label" htmlFor="contactSubject">Asunto</label>
+                            <label className="contactPage__form--label" htmlFor="contactSubject">
+                                {t("contact.sendEmail.label3")}
+                            </label>
                             <input required className="contactPage__form--input" id="contactSubject" type="text" name="subject" />
                         </div>
                         <div className="contactPage__form--field">
-                            <label className="contactPage__form--label" htmlFor="contactMessage">Mensaje</label>
+                            <label className="contactPage__form--label" htmlFor="contactMessage">
+                                {t("contact.sendEmail.label4")}
+                            </label>
                             <textarea required className="contactPage__form--textArea" id="contactMessage" name="message" />
                         </div>
-                        <input className="contactPage__form--button" type="submit" value="Enviar" disabled={isSubmitting} />
+                        <input className="contactPage__form--button" value={t("contact.sendEmail.button")} type="submit" disabled={isSubmitting} />
                         {stateMessage ? <p className="contactPage__form--message">{stateMessage}</p> : <p className="contactPage__form--message"></p>}
                     </form>
                 </section>
                 <section className="contactPage__contactData">
-                    <p className="contactPage__contactData--text"><b>Telefono:</b> 661 34 86 16</p>
-                    <p className="contactPage__contactData--text"><b>Correo:</b> adrianginergimenez@gmail.com</p>
+                    <p className="contactPage__contactData--text">
+                        <Trans
+                            i18nKey="contact.info.phone"
+                            components={{ b: <b /> }}
+                        />
+                    </p>
+                    <p className="contactPage__contactData--text">
+                        <Trans
+                            i18nKey="contact.info.email"
+                            components={{ b: <b /> }}
+                        />
+                    </p>
                 </section>
                 <section className="contactPage__buttonWrap">
-                    <button className="contactPage__button" onClick={() => handleClick("/links")}>ENLACES</button>
-                    <p>¿Quieres comentarme algo?</p>
-                    <button className="contactPage__button" onClick={() => handleClick("/")}>SOBRE MI</button>
+                    <button className="contactPage__button" onClick={() => handleClick("/links")}>
+                        {t("contact.prevButton")}
+                    </button>
+                    <p>
+                        {t("contact.buttonText")}
+                    </p>
+                    <button className="contactPage__button" onClick={() => handleClick("/")}>
+                        {t("contact.nextButton")}
+                    </button>
                 </section>
             </article>
             <div className="contactPage__space bottom"></div>

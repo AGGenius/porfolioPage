@@ -69,6 +69,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(50, 47, 58);
 }
 
 b {
@@ -106,13 +107,13 @@ b {
 
 .contactPage__form--tittle {
     width: 70%;
-    height: 10%;
+    height: 40px;
 
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.5rem;
-    color: rgb(44, 27, 85);
+    font-size: 1.3rem;
+    color: rgb(50, 47, 58);
     border-bottom: 2px solid rgb(28, 53, 133);
 }
 
@@ -175,6 +176,15 @@ b {
     border-radius: 30px;
 
     margin-top: 1rem;
+
+    transition: all .3s;
+}
+
+.contactPage__form--button:hover {
+    background-image: linear-gradient(to left, rgba(231, 244, 245, 0.5), rgba(123, 92, 209, 0.5));
+    border: 2px solid rgb(75, 63, 153);
+
+    transition: all .3s;
 }
 
 .contactPage__form--message {

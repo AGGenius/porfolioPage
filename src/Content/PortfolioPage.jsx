@@ -1,6 +1,7 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useChangePageContext } from "../Context/useChangePageContext";
 import { useEffect, useState, useRef } from "react";
+import { useTranslation, Trans } from "react-i18next";
 import './PortfolioPage.css'
 
 import GamerRest from "../Modules/Portfolio/GamerRest";
@@ -24,8 +25,11 @@ const PortfolioPage = () => {
     const [bigCard, setBigCard] = useState("");
     const [changeCard, setChangeCard] = useState(false);
     const [loaded, setLoaded] = useState(false);
-    
+
     const scrollableRef = useRef(null);
+
+    //language
+    const { t } = useTranslation();
 
     useEffect(() => {
         setChangePage(false);
@@ -52,7 +56,7 @@ const PortfolioPage = () => {
         const actualState = portfolioCard;
         const actualChange = changeCard;
         setLoaded(true);
-        scrollableRef.current.scrollTo(0,0, {behavior: 'smooth'});
+        scrollableRef.current.scrollTo(0, 0, { behavior: 'smooth' });
         setChangeCard(!actualChange);
 
         setTimeout(() => {
@@ -95,9 +99,15 @@ const PortfolioPage = () => {
                     }
                 </section>
                 <section className="portfolioPage__buttonWrap">
-                    <button className="portfolioPage__button" onClick={() => handleClick("/")}>SOBRE MI</button>
-                    <p>Ejemplos de mi desarrollo como programador</p>
-                    <button className="portfolioPage__button" onClick={() => handleClick("/skills")}>SKILLS</button>
+                    <button className="portfolioPage__button" onClick={() => handleClick("/")}>
+                        {t("portfolio.prevButton")}
+                    </button>
+                    <p>
+                        {t("portfolio.buttonText")}
+                    </p>
+                    <button className="portfolioPage__button" onClick={() => handleClick("/skills")}>
+                        {t("portfolio.nextButton")}
+                    </button>
                 </section>
             </article>
             <div className="portfolioPage__space bottom"></div>

@@ -2,23 +2,36 @@ import { Link } from "react-router-dom";
 import CoinsPortalImg from "../../assets/images/Coins_Basic.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation, Trans } from "react-i18next";
 
 const ReactCoinBig = () => {
+    //language
+    const { t } = useTranslation();
+
     return (
         <>
             <div className="portfolioPage__textSection--Big">
-                <h2 className="portfolioPage__tittle--Big">REACT COIN</h2>
-                <h3 className="portfolioPage__subtittle--Big">React Web</h3>
+                <h2 className="portfolioPage__tittle--Big">
+                    {t("portfolio.reactCoin.tittle")}
+                </h2>
+                <h3 className="portfolioPage__subtittle--Big">
+                    {t("portfolio.reactCoin.subTittle")}
+                </h3>
                 <p className="portfolioPage__text--Big">
-                    Desarrollo funcional de una web con el uso de <b>React.js</b> para llevar un control visual del mercado de Cryptomonedas. 
-                    Se puede consultar el valor completo al clicar la tarjeta de la moneda en que nos interese, así como la funcionalidad para 
-                    poder <b>guardar un listado</b> de monedas favoritas y así llevar un seguimiento mas directo de las mismas. Estos datos, por su simpleza
-                    se guardanen el <b>Local Storage</b> del navegador.
+                    <Trans
+                        i18nKey="portfolio.reactCoin.paragraph1"
+                        components={{ b: <b /> }}
+                    />
                 </p>
                 <p className="portfolioPage__text--Big">
-                    Se trata de un ejemplo de uso funcional de una web creada de cero enfocada en el uso de <b>React</b>, mostrando gran parte de sus funcionalidades.
+                    <Trans
+                        i18nKey="portfolio.reactCoin.paragraph2"
+                        components={{ b: <b /> }}
+                    />
                 </p>
-                <p className="portfolioPage__text--Big"><b>JavaScript - HTML5 - CSS3 - API Scraping - Reajct.js - Node.js - Expres.js - React-Router-Dom - LocalStorage - Visual Studio Code - Git </b></p>
+                <p className="portfolioPage__text--Big  tech"><b>
+                    {t("portfolio.reactCoin.techBig")}
+                </b></p>
             </div>
             <div className="portfolioPage__media--Big">
                 <img className="portfolioPage__webpagePhoto--Big" src={CoinsPortalImg} alt="Gamer Rest Webpage Frontpage"></img>

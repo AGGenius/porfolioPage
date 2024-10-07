@@ -3,45 +3,50 @@ import dashboardPortalImg from "../../assets/images/Dashboard_Basic.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons/faHouse";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation, Trans } from "react-i18next";
 
 const DashboardBig = () => {
+    //language
+    const { t } = useTranslation();
+
     return (
         <>
             <div className="portfolioPage__textSection--Big">
-                <h2 className="portfolioPage__tittle--Big">DASHBOARD</h2>
-                <h3 className="portfolioPage__subtittle--Big">Simple Web</h3>
+                <h2 className="portfolioPage__tittle--Big">
+                    {t("portfolio.dashboard.tittle")}
+                </h2>
+                <h3 className="portfolioPage__subtittle--Big">
+                    {t("portfolio.dashboard.subTittle")}
+                </h3>
                 <p className="portfolioPage__text--Big">
-                    Ejemplo de desarrollo frontend basico con el objetivo de crear una web para usar como Home de navegador. 
-                    Sus distintas funcionalidades son:
+                    {t("portfolio.dashboard.paragraph1")}
                 </p>
-                <ul className="portfolioPage__list--Big"> 
+                <ul className="portfolioPage__list--Big">
                     <li className="portfolioPage__listEntry--Big">
-                        Reloj que muestra la hora y fecha actual con mensajes personalizados al usuario.
+                        {t("portfolio.dashboard.listItem1")}
                     </li>
                     <li className="portfolioPage__listEntry--Big">
-                        Agregador de enlaces a otras webs con funcionalidad de comprobación de enlace valido.
+                        {t("portfolio.dashboard.listItem2")}
                     </li>
                     <li className="portfolioPage__listEntry--Big">
-                        Generador de contraseñas seguras (entre 12 y 50 caracteres. Minimo una letra mayuscula y una minuscula, un numero y un
-                        caracter especial). El generador comprueba que genera una contraseña valida haciendo uso de tests.
+                        {t("portfolio.dashboard.listItem3")}
                     </li>
                     <li className="portfolioPage__listEntry--Big">
-                        Buscador integrado de Google.
+                        {t("portfolio.dashboard.listItem4")}
                     </li>
                     <li className="portfolioPage__listEntry--Big">
-                        Modulo con la previsión climatologica. Esta puede ser personalizada por el usuario para mostrar la de la zona que desee.
+                        {t("portfolio.dashboard.listItem5")}
                     </li>
                     <li className="portfolioPage__listEntry--Big">
-                        Fondo que cambia de manera aleatoria según selección propia del usuario. Esta habilitado a mostrar al creador original
-                        en caso de ser una imagen con derechos, así como ofrecer un enlace directo al repertorio de dicho creador.
+                        {t("portfolio.dashboard.listItem6")}
                     </li>
                 </ul>
                 <p className="portfolioPage__text--Big">
-                    Cada uno de estos modulos puede ser usado a su vez de manera independiente en su sección propia, agregando funcionalidades
-                    extra, como en el modulo de clima donde se pueden agregar varias zonas para visualizar y elegir cual se mostrará en la pagina
-                    principal.
+                    {t("portfolio.dashboard.paragraph2")}
                 </p>
-                <p className="portfolioPage__text--Big"><b>JavaScript - HTML5 - CSS3 - API Scraping - LocalStorage - Promise - Deployment - Visual Studio Code - Git </b></p>
+                <p className="portfolioPage__text--Big  tech"><b>
+                    {t("portfolio.dashboard.techBig")}
+                </b></p>
             </div>
             <div className="portfolioPage__media--Big">
                 <img className="portfolioPage__webpagePhoto--Big" src={dashboardPortalImg} alt="Gamer Rest Webpage Frontpage"></img>

@@ -1,38 +1,46 @@
 import ExampleImg from "../../assets/SkillsImg/database-schema.png"
+import { useTranslation, Trans } from "react-i18next";
 
 const DatabaseSkills = () => {
+
+    //language
+    const { t } = useTranslation();
 
     return (
         <>
             <div className="skillsPage__cardWrap">
-                <h2 className="skillsPage__tittle">DESARROLLO DE BASES DE DATOS</h2>
+                <h2 className="skillsPage__tittle">
+                    {t("skills.ddbb.tittle")}
+                </h2>
                 <div className="skillsPage__contentWrap">
                     <div className="skillsPage__textWrap">
                         <p className="skillsPage__text">
-                            Manejo y creación de bases de datos relacionales y no relacionales.
+                            {t("skills.ddbb.paragraph1")}
                         </p>
                         <p className="skillsPage__text">
-                            Conocimiento de la creación de bases de datos con <b>MongoDB y PostgreSQL</b>, su gestión y como trabajar con ellas
-                            para crear, editar, ordenar y eliminar entradas mediante peticiones desde el servidor.
+                            <Trans
+                                i18nKey="skills.ddbb.paragraph2"
+                                components={{ b: <b /> }}
+                            />
                         </p>
                         <p className="skillsPage__text">
-                            Despliegue de bases de datos para su uso posterior en peticiones de servidor así como su administración.
+                            {t("skills.ddbb.paragraph3")}
                         </p>
                     </div>
                     <div className="skillsPage__imgWrap">
                         <img className="skillsPage__img" src={ExampleImg} alt="data base development" />
-                        <p className="skillsPage__imgCreator">
+                        <div className="skillsPage__imgCreator">
                             <p className="skillsPage__imgCreator--text">
-                                Image by&nbsp;
+                                {t("skills.ddbb.imageText1")}
                                 <a className="skillsPage__imgCreator--link" href="https://pixabay.com/users/mcmurryjulie-2375405/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1895779">
-                                     mcmurryjulie&nbsp;
+                                    mcmurryjulie&nbsp;
                                 </a>
-                                from &nbsp;
+                                {t("skills.ddbb.imageText2")}
                                 <a className="skillsPage__imgCreator--link" href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1895779">
                                     Pixabay
                                 </a>
                             </p>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
