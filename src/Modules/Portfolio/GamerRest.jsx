@@ -3,16 +3,27 @@ import gamerRestPortalImg from "../../assets/images/GamerRestFront_Basic.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons/faHouse";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation } from "react-i18next";
 
 const GamerRest = () => {
+    //language
+    const { t } = useTranslation();
 
     return (
         <>
             <div className="portfolioPage__textSection">
-                <h2 className="portfolioPage__tittle">Gamer Rest</h2>
-                <p>Web de para crear entradas sobre videojuegos y generar contenido sobre los mismos.</p>
-                <p><b>Front - Back - DDBB</b></p>
-                <p><b>JavaScript - HTML5 - CSS3 - PostgreSQL - Reajct.js - Node.js - Expres.js</b></p>
+                <h2 className="portfolioPage__tittle"><b>
+                    {t("portfolio.gamerRest.tittle")}
+                </b></h2>
+                <p>
+                    {t("portfolio.gamerRest.text")}
+                </p>
+                <p><b>
+                    {t("portfolio.gamerRest.type")}
+                </b></p>
+                <p><b>
+                    {t("portfolio.gamerRest.tech")}  
+                </b></p>
             </div>
             <div className="portfolioPage__media">
                 <img className="portfolioPage__webpagePhoto" src={gamerRestPortalImg} alt="Gamer Rest Webpage Frontpage"></img>

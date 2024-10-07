@@ -1,0 +1,168 @@
+{
+    "nav": {
+        "about" : "ABAOUT ME",
+        "porfolio" : "PORTFOLIO",
+        "skills" : "SKILLS",
+        "experience" : "EXPERIENCE",
+        "links" : "LINKS",
+        "contact" : "CONTACT",
+        "language" : "LANGUAGE"
+    },
+    "mainPage" : {
+        "tittle" : "WELCOME!",
+        "subTittle" : "You are on my reference page. Here you can learn a little more about me and my projects.",
+        "tittleClosure" : "Think of it as an interactive resume. Cool, right?",
+        "paragraphQuestion1" : "Who am I?",
+        "paragraph1" : "That's simple, I'm <i>Adrián Giner Giménez</i>, a person with a restless mind, who always has something to say if the situation requires it and a great ability to contribute ideas. My ability to concentrate when I'm working on my projects can make me lose track of time!",
+        "paragraphQuestion2" : "What do I do?",
+        "paragraph2" : "Programming! It's what I've loved the most since I started learning <b>Java</b> on my own. Once I discovered my passion, I wanted to give it a professional focus, and I combined my passion for <b>video games and programming</b> by studying several courses focused on <b>Unity 3D and C#</b>. Since I can't stop my thirst for knowledge, I took another small turn towards web programming, taking an intense bootcamp as a <b>full stack web developer</b>, which I complemented on my own.",
+        "paragraphQuestion3" : "But I like more things in life, don't I?",
+        "paragraph3" : "For this I would need a good while, but I will be brief... I play video games <i>(RPG, puzzles, adventure, metroidvania, etc)</i>, I like to read <i>(science fiction, fantasy, mystery, horror, etc)</i>, learn about technology and space science <i>(Go Space X! 🚀)</i>, draw, and enjoy nature and visit the zoo from time to time.",
+        "paragraphQuestion4" : "Ok, but you are looking for someone for your company. What can I contribute?",
+        "paragraph4" : "Let's get technical: <b>Demonstrable knowledge applied</b> to real projects as a Unity 3D programmer, for 2D, 3D and VR/AR games, with C#. But my strong point is that of a certified full stack web designer, using <b>JavaScript, React.js, Node.js, Express.js, HTML, CSS, DB (Relational with PostgreSQL or non-relational with MongoDB), version control with GIT/Github</b>. I'm not closed to specializing in Front or Back, right now I enjoy both sides of the battlefield.",
+        "paragraph5" : "Oh, I didn't put any brakes on learning more <i>(Angular, I say that for you)</i>. So don't forget to stop by here from time to time to see what else has changed.",
+        "paragraph6" : "On a personal level, I am an <b>enthusiastic, respectful person, with a great capacity for problem solving, resourceful, flexible and cooperative</b>. I have a great knack for making people laugh by saying the right thing at the right time.",
+        "buttonText" : "Check out the rest to find out more!",
+        "nextButton" : "CONTACT",
+        "prevButton" : "PORTFOLIO"
+    },
+    "portfolio" : {
+        "gamerRest" : {
+            "tittle" : "Gamer Rest",
+            "text" : "Website for creating entries about video games and generating content about them.",
+            "type" : "Front - Back - DDBB",
+            "tech" : "JavaScript - HTML5 - CSS3 - PostgreSQL - Reajct.js - Node.js - Expres.js",
+            "subTittle" : "Full Stack Web",
+            "paragraph1" : "This is the first website I have developed for a portfolio using everything I have learned in my training as a <b>Full Stack Web Developer</b>. The <b>Front End</b> uses <b>React.js</b> for navigation, along with <b>react-router-dom</b>. The <b>Back End</b> manages requests from the front end for user login/logout, as well as registration. It also handles requests for creating and editing all content on the website, whether it be users, games, or tickets for them. All communications that manipulate data communicate with the database to perform checks, create, edit, or delete content. <b>DDBB uses PostgreSQL</b> as a relational database.",
+            "paragraph2" : "Over time it has become a fully functional website that can be <b>viewed from</b> all commonly used devices, such as <b>web browsers, smartphones and tablets.</b>",
+            "paragraph3" : "Its <b>deployment</b> is done entirely in the <b>Render</b> services.",
+            "techBig" : "JavaScript - HTML5 - CSS3 - API REST - PostgreSQL - Reajct.js - Node.js - Expres.js - react-router-dom - Context - Visual Studio Code - Git - Render"
+        },
+        "reactCoin" : {
+            "tittle" : "React Coin",
+            "text" : "Cryptocurrency tracking website with features to keep a list of favorites.",
+            "type" : "Front",
+            "tech" : "JavaScript - HTML5 - CSS3 - Node.js - Axios.js - react-router-dom",
+            "subTittle" : "React Web",
+            "paragraph1" : "Functional development of a website using <b>React.js</b> to keep a visual control of the Cryptocurrency market. You can check the full value by clicking on the card of the currency you are interested in, as well as the functionality to be able to <b>save a list</b> of favorite currencies and thus keep a more direct track of them. This data, due to its simplicity, is saved in the <b>Local Storage</b> of the browser.",
+            "paragraph2" : "This is an example of functional use of a website created from scratch focused on the use of <b>React</b>, showing much of its functionality.",
+            "techBig" : "JavaScript - HTML5 - CSS3 - API Scraping - Reajct.js - Node.js - Expres.js - React-Router-Dom - LocalStorage - Visual Studio Code - Git"
+        },
+        "dashboard" : {
+            "tittle" : "Dashboard",
+            "text" : "Website with multiple functions to use as a browser's main page.",
+            "type" : "Front",
+            "tech" : "JavaScript - HTML5 - CSS3",
+            "subTittle" : "Simple Web",            
+            "paragraph1" : "Basic frontend development example with the aim of creating a website to use as a browser Home. Its different functionalities are:",
+            "paragraph2" : "Each of these modules can be used independently in its own section, adding extra functionality, such as in the climate module where you can add several zones to view and choose which one will be displayed on the main page.",
+            "listItem1" : "Clock that displays the current time and date with personalized messages to the user.",
+            "listItem2" : "Aggregator of links to other websites with valid link checking functionality.",
+            "listItem3" : "Secure password generator (between 12 and 50 characters. At least one uppercase and one lowercase letter, one number and one special character). The generator checks that it generates a valid password by using tests.",
+            "listItem4" : "Integrated Google search engine.",
+            "listItem5" : "Module with weather forecast. This can be customized by the user to show the weather forecast for the desired area.",
+            "listItem6" : "Background that changes randomly according to the user's own selection. It is enabled to show the original creator in case of an image with rights, as well as offering a direct link to the repertoire of said creator.",
+            "techBig" : "JavaScript - HTML5 - CSS3 - API Scraping - LocalStorage - Promise - Deployment - Visual Studio Code - Git"
+        },
+        "funWithFlags" : {
+            "tittle" : "Fun with flags",
+            "text" : "Website with all the flags of the countries of the world and functions to view data of interest for each country.",
+            "type" : "Front",
+            "tech" : "JavaScript - HTML5 - CSS3",
+            "subTittle" : "Basic Web Scraping API",
+            "paragraph1" : "One of my first test websites that brings data from the Rest Countries API, from which all the countries are obtained to display an identification card with the flag and international name of the country.",
+            "paragraph2" : "When we interact with one of the cards, it shows us a new card in the same window with expanded information about that country, with which we can interact to close it and see the complete list again.",
+            "paragraph3" : "Although it is a basic website, it is also one of the first examples that integrates all the bases of web programming, such as <b>HTML, CSS, and JavaScript</b>",
+            "techBig" : "JavaScript - HTML5 - CSS3 - API Scraping - LocalStorage - Visual Studio Code - Git"
+        },
+        "atomicChamber" : {
+            "tittle" : "Atomic Chamber",
+            "text" : "Free to play mobile game for android with ads, logic and puzzles.",
+            "tech" : "Unity 3D - C# - Admob - Google Play Archievements",
+            "subTittle" : "Android mobile video game",
+            "paragraph1" : "<b>My first full-fledged independent project as a video game developer.</b> It's a free ad-supported mobile game that revolves around detonating particles inside a reaction chamber.",
+            "paragraph2" : "Depending on the amount of reaction you make, you will be able to progress to the next level, and you will also get more points to invest in <b>improvements</b> for each type of particle, such as the ability to touch to start reactions.",
+            "paragraph3" : "It consists of 40 levels that are unlocked naturally as you progress through the game, as well as an <b>endless mode</b> that can be unlocked by completing it with the highest score in each level. In it, you can choose how many particles of each type you want to appear, as well as vary game parameters.",
+            "paragraph4" : "The game features an <b>achievement</b> system integrating <b>Google Play</b> services, language switching, and options to select which audio track you want to use, whether you want it to do a random loop, or reset saved data. All the game's artwork is done by myself, except for the typography.",
+            "techBig" : "Unity 3D - C# - Admob - Google Play Archievements"
+        },
+        "buttonText" : "Examples of my development as a programmer",
+        "nextButton" : "SKILLS",
+        "prevButton" : "ABOUT ME"
+    },
+    "skills": {
+        "item1": "WEB",
+        "item2": "DDBB",
+        "item3": "GAMES",
+        "item4": "LANGUAGES",
+        "item5": "SOFT SKILLS",
+        "web": {
+            "tittle": "FULL STACK WEB DEVELOPMENT",
+            "paragraph1": "Creation, deployment and control of complete <b>Back End and Front End</b> services.",
+            "paragraph2": "Proficient in web page programming using <b>HTML - CSS - JavaScript </b> to create interesting and dynamic content by applying <b>Node.js, React.js, and Expres.js</b>, increasing the capacity and functionality of the service.",
+            "paragraph3": "Knowledge and control of <b>AUTH0, JWT</b> for user management. Handling of <b>Fetch and Axios</b>, as well as <b>HTTP</b> for Front to Back requests and from the same to the rest of the services, as well as use of <b>REST API</b>.",
+            "imageText": "Picture made by vectorjuice in Freepik"
+        },
+        "ddbb": {
+            "tittle": "DATABASE DEVELOPMENT",
+            "paragraph1": "Management and creation of relational and non-relational databases.",
+            "paragraph2": "Knowledge of creating databases with <b>MongoDB and PostgreSQL</b>, their management and how to work with them to create, edit, sort and delete entries through requests from the server.",
+            "paragraph3": "Deployment of databases for later use in server requests as well as their administration.",
+            "imageText1": "Picture made by ",
+            "imageText2": "in "
+        },
+        "games": {
+            "tittle": "VIDEOGAME DEVELOPER",
+            "paragraph1": "Extensive knowledge of video game programming in <b>Unity 3D</b> with <b>C#</b>.",
+            "paragraph2": "Programming of <b>2D - 3D - VR - AR</b> video games, testing them and publishing projects in <b>Google Play Store</b>, including the use and management of ads as well as the <b>Google Play</b> achievement system. Creation and implementation of assets. <b>3D sound control</b>. Management of <b>Agent Navigation and Pathfinding</b>.",
+            "paragraph3": "More than two years of experience programming in <b>C#</b>, with which I became certified after starting programming on my own with <b>Java</b>, and before making my leap as a <b>Full Stack Web Developer</b>",
+            "imageText": "Picute made by me"
+        },
+        "languages": {
+            "tittle": "MY LANGUAGES",
+            "language1": {
+                "lang": "SPANISH",
+                "item1": "<b>Reading:</b> Native",
+                "item2": "<b>Writing:</b> Native",
+                "item3": "<b>Conversational:</b> Native",
+                "item4": "This is the official language of my country and the one I began to use."
+            },
+            "language2": {
+                "lang": "ENGLISH",
+                "item1": "<b>Reading:</b> High",
+                "item2": "<b>Writing:</b> High",
+                "item3": "<b>Conversational:</b> Intermediate",
+                "item4": "On the way to certification by an official school, don't be afraid to watch English series or movies in their original language, read books or search for relevant information."
+            },
+            "language3": {
+                "lang": "VALENCIAN",
+                "item1": "<b>Reading:</b> High",
+                "item2": "<b>Writing:</b> High",
+                "item3": "<b>Conversational:</b> High",
+                "item4": "Another language from my country, more specifically from the region where I was born."
+            }
+        },
+        "softSkills": {
+            "tittle": "INTERPERSONAL SKILLS",
+            "item1": "Critical thinking",
+            "item2": "Engaged",
+            "item3": "Constant learning",
+            "item4": "Resolute",
+            "item5": "Curious",
+            "item6": "Courteous",
+            "item7": "Sense of humor",
+            "item8": "Constant",
+            "item9": "Logical",
+            "item10": "Pragmatic",
+            "item11": "Capability for abstraction",
+            "item12": "Kind",
+            "paragraph1": "I am a person with a sense of constant growth, great creativity and a sense of duty.",
+            "paragraph2": "Always friendly and respectful of others.",
+            "paragraph3": "Highly reliable, seeking to give the best of myself.",
+            "paragraph4": "Professional and with great performance working in a team, as well as potential for its management."
+        },
+        "buttonText": "A whole repertoire of skills",
+        "nextButton": "EXPERIENCE",
+        "prevButton": "PORTFOLIO"
+    }
+}

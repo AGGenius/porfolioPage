@@ -251,6 +251,7 @@ ul {
 .portfolioPage__tittle--Big {
     font-size: 2rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .portfolioPage__subtittle--Big {
@@ -267,6 +268,10 @@ ul {
 
     font-size: 1rem;
     text-align: left;
+}
+
+.portfolioPage__text--Big.tech {
+    text-align: center;
 }
 
 .portfolioPage__list--Big {

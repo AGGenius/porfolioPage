@@ -1,9 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import { useChangePageContext } from "../Context/useChangePageContext";
 import { useEffect, useState } from "react";
+import { useTranslation, Trans } from "react-i18next";
 import './ExperiencePage.css'
 
 const ExperiencePage = () => {
+
+    //language
+    const { t } = useTranslation();
+    
     const { changePage, setChangePage } = useChangePageContext();
     const { setActualPage } = useChangePageContext();
     const navigate = useNavigate();

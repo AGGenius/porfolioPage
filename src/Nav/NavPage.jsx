@@ -2,6 +2,8 @@ import { useNavigate } from "react-router-dom";
 import { useChangePageContext } from "../Context/useChangePageContext";
 import { useState, useRef, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import LanguageSelector from "./LanguageSelector.jsx";
 import './NavPage.css'
 
 const NavPage = () => {
@@ -13,6 +15,9 @@ const NavPage = () => {
     //menu
     const [colapsedMenu, setColapsedMenu] = useState(false);
     const newRef = useRef(null);
+
+    //language
+    const { t } = useTranslation();
 
     useEffect(() => {
         document.addEventListener("mousedown", handleOutsideClick);
@@ -46,12 +51,25 @@ const NavPage = () => {
     const navLinks = () => {
         return (
             <>
-                <a className={actualPage === "/" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/")}>SOBRE MI</a>
-                <a className={actualPage === "/portfolio" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/portfolio")}>PORTFOLIO</a>
-                <a className={actualPage === "/skills" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/skills")}>SKILLS</a>
-                <a className={actualPage === "/experience" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/experience")}>EXPERIENCIA</a>
-                <a className={actualPage === "/links" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/links")}>ENLACES</a>
-                <a className={actualPage === "/contact" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/contact")}>CONTACTO</a>
+                <a className={actualPage === "/" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/")}>
+                    {t("nav.about")}
+                </a>
+                <a className={actualPage === "/portfolio" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/portfolio")}>
+                    {t("nav.porfolio")}
+                </a>
+                <a className={actualPage === "/skills" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/skills")}>
+                    {t("nav.skills")}
+                </a>
+                <a className={actualPage === "/experience" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/experience")}>
+                    {t("nav.experience")}
+                </a>
+                <a className={actualPage === "/links" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/links")}>
+                    {t("nav.links")}
+                </a>
+                <a className={actualPage === "/contact" ? "nav__link selected" : "nav__link"} onClick={() => handleClick("/contact")}>
+                    {t("nav.contact")}
+                </a>
+                {<LanguageSelector />}
             </>
         );
     };

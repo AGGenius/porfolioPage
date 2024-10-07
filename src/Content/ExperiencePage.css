@@ -95,6 +95,10 @@
     align-items: center;
 }
 
+.experiencePage__list--content.tech {
+    text-align: center;
+}
+
 .experiencePage__list {
     width: 100%;
     height: 100%;
@@ -304,10 +308,6 @@
         scale: 1;
     
         transition: none;
-    }
-
-    .experiencePage__list--content.tech {
-        text-align: center;
     }
 
     .experiencePage__buttonWrap {

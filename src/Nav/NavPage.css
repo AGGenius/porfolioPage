@@ -19,7 +19,7 @@ nav {
 
 nav.colapsed {
     width: 90%;
-    min-height: 280px;
+    min-height: 310px;
     gap: 1rem;
 
     display: flex;
@@ -97,6 +97,14 @@ nav.colapsed {
 .nav__link.selected {
     color: rgb(220, 240, 247);
     text-decoration: underline;
+}
+
+.nav__language {
+    color: rgb(202, 235, 232);
+}
+
+.nav__language:hover {
+    color: rgb(255, 255, 238);
 }
 
 @media screen and (max-width: 1200px) {

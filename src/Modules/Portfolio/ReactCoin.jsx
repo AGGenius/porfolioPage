@@ -2,16 +2,27 @@ import { Link } from "react-router-dom";
 import CoinsPortalImg from "../../assets/images/Coins_Basic.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation, Trans } from "react-i18next";
 
 const ReactCoin = () => {
+    //language
+    const { t } = useTranslation();
 
     return (
         <>
             <div className="portfolioPage__textSection">
-                <h2 className="portfolioPage__tittle">ReactCoin</h2>
-                <p>Web de seguimiento de criptomonedas con funciones para tener un listado de favoritas.</p>
-                <p><b>Front</b></p>
-                <p><b>JavaScript - HTML5 - CSS3 - Node.js - Axios.js - react-router-dom</b></p>
+                <h2 className="portfolioPage__tittle">
+                    {t("portfolio.reactCoin.tittle")}
+                </h2>
+                <p>
+                    {t("portfolio.reactCoin.text")}
+                </p>
+                <p><b>
+                    {t("portfolio.reactCoin.type")}
+                </b></p>
+                <p><b>
+                    {t("portfolio.reactCoin.tech")}
+                </b></p>
             </div>
             <div className="portfolioPage__media">
                 <img className="portfolioPage__webpagePhoto" src={CoinsPortalImg} alt="Gamer Rest Webpage Frontpage"></img>
