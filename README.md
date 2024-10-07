@@ -12,7 +12,7 @@ This website is a complete expression of my way of programming and my personal v
 
 ## Future improvements 
 
-As a final addition, I want to incorporate an interactive button to change the language of all the content on the website, using a JSON document with the Spanish and English languages, and each section changes according to the context handled from that button.
+As a final addition, I want to incorporate an interactive button to change the language of all the content on the website, using a JSON document with the Spanish and English languages, and each section changes according to the context handled from that button. (added)
 
 
 # Español
@@ -29,4 +29,4 @@ Esta web es una expresión completa de mi forma de programar y mis gustos visual
 
 ## Futuras mejoras
 
-Como añadido final quiero incorporar un botón interactivo para cambiar el idioma de todo el contenido de la web, haciendo uso de un documento JSON con los idiomas Español e Inglés, y que cada sección cambie según el contexto manejado desde ese botón.
+Como añadido final quiero incorporar un botón interactivo para cambiar el idioma de todo el contenido de la web, haciendo uso de un documento JSON con los idiomas Español e Inglés, y que cada sección cambie según el contexto manejado desde ese botón. (añadido)
