@@ -14,13 +14,13 @@ const Flags = () => {
                 <h2 className="portfolioPage__tittle">
                     {t("portfolio.funWithFlags.tittle")}
                 </h2>
-                <p>
+                <p className="portfolioPage__smallText">
                     {t("portfolio.funWithFlags.text")}
                 </p>
-                <p><b>
+                <p className="portfolioPage__smallText"><b>
                     {t("portfolio.funWithFlags.type")}
                 </b></p>
-                <p><b>
+                <p className="portfolioPage__smallText"><b>
                     {t("portfolio.funWithFlags.tech")}
                 </b></p>
             </div>

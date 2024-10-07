@@ -29,7 +29,7 @@ const DatabaseSkills = () => {
                     </div>
                     <div className="skillsPage__imgWrap">
                         <img className="skillsPage__img" src={ExampleImg} alt="data base development" />
-                        <p className="skillsPage__imgCreator">
+                        <div className="skillsPage__imgCreator">
                             <p className="skillsPage__imgCreator--text">
                                 {t("skills.ddbb.imageText1")}
                                 <a className="skillsPage__imgCreator--link" href="https://pixabay.com/users/mcmurryjulie-2375405/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1895779">
@@ -40,7 +40,7 @@ const DatabaseSkills = () => {
                                     Pixabay
                                 </a>
                             </p>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>

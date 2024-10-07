@@ -64,7 +64,7 @@ const MainPage = () => {
                     <p className="mainPage__paraContent short">
                         <Trans
                             i18nKey="mainPage.paragraph1"
-                            components={{i: <i />}}
+                            components={{ i: <i /> }}
                         />
                     </p>
                     <p className="mainPage__paraQuestion">
@@ -73,7 +73,7 @@ const MainPage = () => {
                     <p className="mainPage__paraContent short">
                         <Trans
                             i18nKey="mainPage.paragraph2"
-                            components={{b: <b/>}}
+                            components={{ b: <b /> }}
                         />
                     </p>
                     <p className="mainPage__paraQuestion">
@@ -82,7 +82,7 @@ const MainPage = () => {
                     <p className="mainPage__paraContent">
                         <Trans
                             i18nKey="mainPage.paragraph3"
-                            components={{i: <i />}}
+                            components={{ i: <i /> }}
                         />
                     </p>
                     <p className="mainPage__paraQuestion">
@@ -91,19 +91,19 @@ const MainPage = () => {
                     <p className="mainPage__paraContent">
                         <Trans
                             i18nKey="mainPage.paragraph4"
-                            components={{b: <b />}}
+                            components={{ b: <b /> }}
                         />
                     </p>
                     <p className="mainPage__paraContent">
                         <Trans
                             i18nKey="mainPage.paragraph5"
-                            components={{i: <i />}}
+                            components={{ i: <i /> }}
                         />
                     </p>
                     <p className="mainPage__paraContent">
                         <Trans
                             i18nKey="mainPage.paragraph6"
-                            components={{b: <b />}}
+                            components={{ b: <b /> }}
                         />
                     </p>
                 </section>
@@ -111,7 +111,9 @@ const MainPage = () => {
                     <button className="mainPage__button" onClick={() => handleClick("/contact")}>
                         {t("mainPage.nextButton")}
                     </button>
-                    {t("mainPage.buttonText")}
+                    <p>
+                        {t("mainPage.buttonText")}
+                    </p>
                     <button className="mainPage__button" onClick={() => handleClick("/portfolio")}>
                         {t("mainPage.prevButton")}
                     </button>

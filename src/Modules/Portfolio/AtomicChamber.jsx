@@ -14,10 +14,10 @@ const AtomicChamber = () => {
                 <h2 className="portfolioPage__tittle">
                 {t("portfolio.atomicChamber.tittle")}
                 </h2>
-                <p>
+                <p className="portfolioPage__smallText">
                 {t("portfolio.atomicChamber.text")}
                 </p>
-                <p><b>                    
+                <p className="portfolioPage__smallText"><b>                    
                 {t("portfolio.atomicChamber.tech")}
                 </b></p>
             </div>

@@ -21,7 +21,7 @@ const NavPage = () => {
 
     useEffect(() => {
         document.addEventListener("mousedown", handleOutsideClick);
-        setActualPage("/");
+        setActualPage(window.location.pathname);
 
         return () => {
             document.removeEventListener("mousedown", handleOutsideClick);

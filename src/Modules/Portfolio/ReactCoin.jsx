@@ -14,13 +14,13 @@ const ReactCoin = () => {
                 <h2 className="portfolioPage__tittle">
                     {t("portfolio.reactCoin.tittle")}
                 </h2>
-                <p>
+                <p className="portfolioPage__smallText">
                     {t("portfolio.reactCoin.text")}
                 </p>
-                <p><b>
+                <p className="portfolioPage__smallText"><b>
                     {t("portfolio.reactCoin.type")}
                 </b></p>
-                <p><b>
+                <p className="portfolioPage__smallText"><b>
                     {t("portfolio.reactCoin.tech")}
                 </b></p>
             </div>

@@ -1,19 +1,18 @@
 import { useNavigate } from "react-router-dom";
 import { useChangePageContext } from "../Context/useChangePageContext";
 import { useEffect, useState } from "react";
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import './ExperiencePage.css'
 
 const ExperiencePage = () => {
-
-    //language
-    const { t } = useTranslation();
-    
     const { changePage, setChangePage } = useChangePageContext();
     const { setActualPage } = useChangePageContext();
     const navigate = useNavigate();
     const [exit, setExit] = useState(false);
     const [cont, setCont] = useState(0);
+
+    //language
+    const { t } = useTranslation();
 
     useEffect(() => {
         setChangePage(false);
@@ -41,170 +40,171 @@ const ExperiencePage = () => {
             <div className="experiencePage__space top"></div>
             <article className="experiencePage__content">
                 <section className="experiencePage__time">
-                    <p className="experiencePage__time--year">HOY</p>
+                    <p className="experiencePage__time--year">
+                        {t("experience.date")}
+                    </p>
                     <p className="experiencePage__time--year">2018</p>
                 </section>
                 <section className="experiencePage__text">
                     <ul className="experiencePage__list">
                         <li className="experiencePage__listItem">
                             <h2 className="experiencePage__list-tittle">
-                                Programador multidisciplinar
+                                {t("experience.item1.tittle")}
                             </h2>
                             <h3 className="experiencePage__list--subtittle">
-                                Freelance
+                                {t("experience.item1.subTittle")}
                             </h3>
                             <p className="experiencePage__list--time">
-                                09/2023 - Actual
+                                {t("experience.item1.timeline")}
                             </p>
                             <p className="experiencePage__list--position">
-                                Remoto
+                                {t("experience.item1.type")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Desarrollo de videojuegos para plataformas android.
+                                {t("experience.item1.item1")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Desarrollo de servicios de Front y Back.
-
+                                {t("experience.item1.item2")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Creación y gestión de bases de datos relacionales y no relacionales.
+                                {t("experience.item1.item3")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Despliegue de servicios.
+                                {t("experience.item1.item4")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Trabajo con repositorios de GitHub.
+                                {t("experience.item1.item5")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Documentación de código.
+                                {t("experience.item1.item6")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Testing manual.
+                                {t("experience.item1.item7")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Desarrollo de tests programaticos.
+                                {t("experience.item1.item8")}
                             </p>
-                            <p className="experiencePage__list--content tech">
-                                <b>Visual Studio - Unity 3D - C# - JavaScript - HTML - CSS - SQL - MongoDB - GIT - React.js</b>
-                            </p>
+                            <p className="experiencePage__list--content tech"><b>
+                                {t("experience.item1.tech")}
+                            </b></p>
                         </li>
                         <li className="experiencePage__listItem">
                             <h2 className="experiencePage__list-tittle">
-                                Junior Programmer Unity 3D/C#
+                                {t("experience.item2.tittle")}
                             </h2>
                             <h3 className="experiencePage__list--subtittle">
-                                Digital Monster Collective
+                                {t("experience.item2.subTittle")}
                             </h3>
                             <p className="experiencePage__list--time">
-                                06/2023 - 09/2023
+                                {t("experience.item2.timeline")}
                             </p>
                             <p className="experiencePage__list--position">
-                                Remoto
+                                {t("experience.item2.type")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Desarrollo de videojuegos 2D con Unity 3D.
+                                {t("experience.item2.item1")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Test e informes de los proyectos internos.
+                                {t("experience.item2.item2")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Análisis del código implementado.
+                                {t("experience.item2.item3")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Refactorización de código.
+                                {t("experience.item2.item4")}
                             </p>
-                            <p className="experiencePage__list--content  tech">
-                                <b>Visual Studio - Unity 3D - C# - Plastic SCM.</b>
-                            </p>
+                            <p className="experiencePage__list--content tech"><b>
+                                {t("experience.item2.tech")}
+                            </b></p>
                         </li>
                         <li className="experiencePage__listItem">
                             <h2 className="experiencePage__list-tittle">
-                                Gestión de expedientes en baja tensión
+                                {t("experience.item3.tittle")}
                             </h2>
                             <h3 className="experiencePage__list--subtittle">
-                                SEYP INGENIERIA SL
+                                {t("experience.item3.subTittle")}
                             </h3>
                             <p className="experiencePage__list--time">
-                                06/2020 - 02/2022
+                                {t("experience.item3.timeline")}
                             </p>
                             <p className="experiencePage__list--position">
-                                Hibrido
+                                {t("experience.item3.type")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Analizar la viabilidad de nuevas peticiones de terceros en las redes de Distribución BT de Iberdrola.
+                                {t("experience.item3.item1")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Informar las condiciones técnico-económicas de las peticiones de terceros.
+                                {t("experience.item3.item2")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Coordinar los trabajos adjudicados con el contratista de Iberdrola.
+                                {t("experience.item3.item3")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Certificar y aprobar las mediciones del contratista de obra.
+                                {t("experience.item3.item4")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Inventariar en la cartografía interna de los sistemas de Iberdrola las nuevas
-                                instalaciones de peticiones aceptadas por terceros.
+                                {t("experience.item3.item5")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Cierre técnico-económico, con acta de puesta en marcha de obras aceptadas
-                                por terceros.
+                                {t("experience.item3.item6")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Registrar hoja instalaciones de enlace en las peticiones aceptadas por
-                                terceros.
+                                {t("experience.item3.item7")}
                             </p>
-                            <p className="experiencePage__list--content  tech">
-                                <b>Suite Ofimática Windows Office, SAP, herramientas internas.</b>
-                            </p>
+                            <p className="experiencePage__list--content tech"><b>
+                                {t("experience.item3.tech")}
+                            </b></p>
                         </li>
                         <li className="experiencePage__listItem">
                             <h2 className="experiencePage__list-tittle">
-                                Gestor de expedientes electricos
+                                {t("experience.item4.tittle")}
                             </h2>
                             <h3 className="experiencePage__list--subtittle">
-                                IDEA INGENIERÍA
+                                {t("experience.item4.subTittle")}
                             </h3>
                             <p className="experiencePage__list--time">
-                                10/2018 - 02/2020
+                                {t("experience.item4.timeline")}
                             </p>
                             <p className="experiencePage__list--position">
-                                Presencial
+                                {t("experience.item4.type")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Analizar la viabilidad de nuevas peticiones de terceros en las redes de Distribución BT de Iberdrola.
+                                {t("experience.item4.item1")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Informar las condiciones técnico-económicas de las peticiones de terceros.
+                                {t("experience.item4.item2")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Coordinar los trabajos adjudicados con el contratista de Iberdrola.
+                                {t("experience.item4.item3")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Certificar y aprobar las mediciones del contratista de obra.
+                                {t("experience.item4.item4")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Inventariar en la cartografía interna de los sistemas de Iberdrola las nuevas
-                                instalaciones de peticiones aceptadas por terceros.
+                                {t("experience.item4.item5")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Cierre técnico-económico, con acta de puesta en marcha de obras aceptadas
-                                por terceros.
+                                {t("experience.item4.item6")}
                             </p>
                             <p className="experiencePage__list--content">
-                                - Registrar hoja instalaciones de enlace en las peticiones aceptadas por
-                                terceros.
+                                {t("experience.item4.item7")}
                             </p>
-                            <p className="experiencePage__list--content  tech">
-                                <b>Suite Ofimática Windows Office, SAP, herramientas internas.</b>
-                            </p>
+                            <p className="experiencePage__list--content tech"><b>
+                                {t("experience.item4.tech")}
+                            </b></p>
                         </li>
                     </ul>
                 </section>
                 <section className="experiencePage__buttonWrap">
-                    <button className="experiencePage__button" onClick={() => handleClick("/skills")}>SKILLS</button>
-                    <p>Una coleccion de experiencias profesionales</p>
-                    <button className="experiencePage__button" onClick={() => handleClick("/links")}>ENLACES</button>
+                    <button className="experiencePage__button" onClick={() => handleClick("/skills")}>
+                        {t("experience.prevButton")}
+                    </button>
+                    <p>
+                        {t("experience.buttonText")}
+                    </p>
+                    <button className="experiencePage__button" onClick={() => handleClick("/links")}>
+                        {t("experience.nextButton")}
+                    </button>
                 </section>
             </article>
             <div className="experiencePage__space bottom"></div>

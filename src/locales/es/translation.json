@@ -168,61 +168,102 @@
     "experience" : {
         "date" : "HOY",
         "item1" : {
-            "tittle" : "",
-            "subTittle" : "",
-            "timeline" : "",
-            "type" : "",
-            "item1" : "",
-            "item2" : "",
-            "item3" : "",
-            "item4" : "",
-            "item5" : "",
-            "item6" : "",
-            "item7" : "",
-            "item8" : "",
-            "tech" : ""
+            "tittle" : "Programador multidisciplinar",
+            "subTittle" : "Independiete",
+            "timeline" : "09/2023 - Actual",
+            "type" : "Remoto",
+            "item1" : "- Desarrollo de videojuegos para plataformas Android.",
+            "item2" : "- Desarrollo de servicios de Front y Back.",
+            "item3" : "- Creación y gestión de bases de datos relacionales y no relacionales.",
+            "item4" : "- Despliegue de servicios.",
+            "item5" : "- Trabajo con repositorios de GitHub.",
+            "item6" : "- Documentación de código.",
+            "item7" : "- Testing manual.",
+            "item8" : "- Desarrollo de tests programaticos.",
+            "tech" : "Visual Studio - Unity 3D - C# - JavaScript - HTML - CSS - SQL - MongoDB - GIT - React.js"
         },
         "item2" : {
-            "tittle" : "",
-            "subTittle" : "",
-            "timeline" : "",
-            "type" : "",
-            "item1" : "",
-            "item2" : "",
-            "item3" : "",
-            "item4" : "",
-            "tech" : ""
+            "tittle" : "Porgramador Junior Unity 3D/C#",
+            "subTittle" : "Digital Monster Collective",
+            "timeline" : "06/2023 - 09/2023",
+            "type" : "Remoto",
+            "item1" : "- Desarrollo de videojuegos 2D con Unity 3D.",
+            "item2" : "- Test e informes de los proyectos internos.",
+            "item3" : "- Análisis del código implementado.",
+            "item4" : "- Refactorización de código.",
+            "tech" : "Visual Studio - Unity 3D - C# - Plastic SCM"
         },
         "item3" : {
-            "tittle" : "",
-            "subTittle" : "",
-            "timeline" : "",
-            "type" : "",
-            "item1" : "",
-            "item2" : "",
-            "item3" : "",
-            "item4" : "",
-            "item5" : "",
-            "item6" : "",
-            "item7" : "",
-            "tech" : ""
+            "tittle" : "Gestión de expedientes en baja tensión",
+            "subTittle" : "SEYP INGENIERIA SL",
+            "timeline" : "06/2020 - 02/2022",
+            "type" : "Hibrido",
+            "item1" : "- Analizar la viabilidad de nuevas peticiones de terceros en las redes de Distribución BT de Iberdrola.",
+            "item2" : "- Informar las condiciones técnico-económicas de las peticiones de terceros.",
+            "item3" : "- Coordinar los trabajos adjudicados con el contratista de Iberdrola.",
+            "item4" : "- Certificar y aprobar las mediciones del contratista de obra.",
+            "item5" : "- Inventariar en la cartografía interna de los sistemas de Iberdrola las nuevas instalaciones de peticiones aceptadas por terceros.",
+            "item6" : "- Cierre técnico-económico, con acta de puesta en marcha de obras aceptadas por terceros.",
+            "item7" : "- Registrar hoja instalaciones de enlace en las peticiones aceptadas por terceros.",
+            "tech" : "Suite Ofimática Windows Office, SAP, herramientas internas"
         },
         "item4" : {
-            "tittle" : "",
-            "subTittle" : "",
-            "timeline" : "",
-            "type" : "",
-            "item1" : "",
-            "item2" : "",
-            "item3" : "",
-            "item4" : "",
-            "item5" : "",
-            "item6" : "",
-            "item7" : "",
-            "tech" : ""
+            "tittle" : "Gestor de expedientes electricos",
+            "subTittle" : "IDEA INGENIERÍA",
+            "timeline" : "10/2018 - 02/2020",
+            "type" : "Presencial",
+            "item1" : "- Analizar la viabilidad de nuevas peticiones de terceros en las redes de Distribución BT de Iberdrola.",
+            "item2" : "- Informar las condiciones técnico-económicas de las peticiones de terceros.",
+            "item3" : "- Coordinar los trabajos adjudicados con el contratista de Iberdrola.",
+            "item4" : "- Certificar y aprobar las mediciones del contratista de obra.",
+            "item5" : "- Inventariar en la cartografía interna de los sistemas de Iberdrola las nuevas instalaciones de peticiones aceptadas por terceros.",
+            "item6" : "- Cierre técnico-económico, con acta de puesta en marcha de obras aceptadas por terceros.",
+            "item7" : "- Registrar hoja instalaciones de enlace en las peticiones aceptadas porterceros.",
+            "tech" : "Suite Ofimática Windows Office, SAP, herramientas internas"
         },
-        "buttonText": "¡Échale un vistazo al resto para saber más!",
-        "nextButton": "CONTACTO",
-        "prevButton": "PORFOLIO"
+        "buttonText": "Una coleccion de experiencias profesionales",
+        "nextButton": "ENLACES",
+        "prevButton": "SKILLS"
+    },
+    "links" : {
+        "item1" : {
+            "tittle": "LinkedIn",
+            "text": "Mi red social para el sector profesional."
+        },
+        "item2" : {
+            "tittle": "Github",
+            "text": "Todos mis repositorios para que puedas echar un ojo a mis skills de programación."
+        },
+        "item3" : {
+            "tittle": "Google Play",
+            "text": "Mi perfil de desarrollador para Android."
+        },
+        "item4" : {
+            "tittle": "Gamer Rest",
+            "text": "Mi web y proyecto personal como Full Stack Web Developer."
+        },
+        "buttonText" : "¡No todo puede contenerse en una unica web!",
+        "nextButton" : "CONTACTO",
+        "prevButton" : "EXPERIENCIA"
+    },
+    "contact" : {
+        "sendEmail" : {
+            "tittle" : "Puedes usar el siguiente formulario para enviarme un correo",
+            "label1" : "Nombre",
+            "label2" : "Correo",
+            "label3" : "Asunto",
+            "label4" : "Mensaje",
+            "button" : "Enviar"
+        },
+        "info" : {
+            "phone" : "<b>Telefono:</b> 661 34 86 16",
+            "email" : "<b>Correo:</b> adrianginergimenez@gmail.com"
+        },
+        "buttonText" : "¿Quieres comentarme algo?",
+        "nextButton" : "SOBRE MI",
+        "prevButton" : "ENLACES"
+    },
+    "footer" : {
+        "text" : "© 2024 por Adrian Giner Gimenez"
     }
 }

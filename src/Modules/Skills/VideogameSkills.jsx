@@ -35,11 +35,11 @@ const DatabaseSkills = () => {
                     </div>
                     <div className="skillsPage__imgWrap">
                         <img className="skillsPage__img roundend" src={ExampleImg} alt="video game development" />
-                        <p className="skillsPage__imgCreator">
+                        <div className="skillsPage__imgCreator">
                             <p className="skillsPage__imgCreator--text">
                                 {t("skills.games.imageText")}
                             </p>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>

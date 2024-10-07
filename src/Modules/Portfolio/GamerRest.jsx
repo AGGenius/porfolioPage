@@ -15,13 +15,13 @@ const GamerRest = () => {
                 <h2 className="portfolioPage__tittle"><b>
                     {t("portfolio.gamerRest.tittle")}
                 </b></h2>
-                <p>
+                <p className="portfolioPage__smallText">
                     {t("portfolio.gamerRest.text")}
                 </p>
-                <p><b>
+                <p className="portfolioPage__smallText"><b>
                     {t("portfolio.gamerRest.type")}
                 </b></p>
-                <p><b>
+                <p className="portfolioPage__smallText"><b>
                     {t("portfolio.gamerRest.tech")}  
                 </b></p>
             </div>

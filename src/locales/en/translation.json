@@ -164,5 +164,106 @@
         "buttonText": "A whole repertoire of skills",
         "nextButton": "EXPERIENCE",
         "prevButton": "PORTFOLIO"
+    },
+    "experience" : {
+        "date" : "TODAY",
+        "item1" : {
+            "tittle" : "Multidisciplinary programmer",
+            "subTittle" : "Freelance",
+            "timeline" : "09/2023 - Now",
+            "type" : "Remote",
+            "item1" : "- Development of video games for Android platforms.",
+            "item2" : "- Development of Front and Back services.",
+            "item3" : "- Creation and management of relational and non-relational databases.",
+            "item4" : "- Deployment of services.",
+            "item5" : "- Work with GitHub repositories.",
+            "item6" : "- Code documentation.",
+            "item7" : "- Manual testing.",
+            "item8" : "- Development of programmatic tests.",
+            "tech" : "Visual Studio - Unity 3D - C# - JavaScript - HTML - CSS - SQL - MongoDB - GIT - React.js"
+        },
+        "item2" : {
+            "tittle" : "Junior Programmer Unity 3D/C#",
+            "subTittle" : "Digital Monster Collective",
+            "timeline" : "06/2023 - 09/2023",
+            "type" : "Remote",
+            "item1" : "- 2D video game development with Unity 3D.",
+            "item2" : "- Testing and reporting of internal developments.",
+            "item3" : "- Analysis of the implemented code.",
+            "item4" : "- Code refactoring.",
+            "tech" : "Visual Studio - Unity 3D - C# - Plastic SCM"
+        },
+        "item3" : {
+            "tittle" : "Management of low-voltage requests",
+            "subTittle" : "SEYP INGENIERIA SL",
+            "timeline" : "06/2020 - 02/2022",
+            "type" : "Hybrid",
+            "item1" : "- Analyze the feasibility of new third-party requests in Iberdrola's LV distribution networks.",
+            "item2" : "- Report the technical-economic conditions of third party requests.",
+            "item3" : "- Coordinate the works awarded with Iberdrola's contractor.",
+            "item4" : "- Certify and approve the work contractor's measurements.",
+            "item5" : "- Inventory in the internal mapping of Iberdrola's systems the new installations of requests accepted by third parties.",
+            "item6" : "- Technical-financial closure, with commissioning minutes of works accepted by third parties.",
+            "item7" : "- Recording of link installations sheet in the requests accepted by third parties.",
+            "tech" : "Windows Office Suite, SAP, corporate applications."
+        },
+        "item4" : {
+            "tittle" : "Management of low-voltage requests",
+            "subTittle" : "IDEA INGENIERÍA",
+            "timeline" : "10/2018 - 02/2020",
+            "type" : "In-person",
+            "item1" : "- Analyze the feasibility of new third-party requests in Iberdrola's LV distribution networks.",
+            "item2" : "- Report the technical-economic conditions of third party requests.",
+            "item3" : "- Coordinate the works awarded with Iberdrola's contractor.",
+            "item4" : "- Certify and approve the work contractor's measurements.",
+            "item5" : "- Inventory in the internal mapping of Iberdrola's systems the new installations of requests accepted by third parties.",
+            "item6" : "- Technical-financial closure, with commissioning minutes of works accepted by third parties.",
+            "item7" : "- Recording of link installations sheet in the requests accepted by third parties.",
+            "tech" : "Windows Office Suite, SAP, corporate applications."
+        },
+        "buttonText": "A collection of professional experiences",
+        "nextButton": "ENLACES",
+        "prevButton": "SKILLS"
+    },
+    "links" : {
+        "item1" : {
+            "tittle": "LinkedIn",
+            "text": "My social network for the professional sector."
+        },
+        "item2" : {
+            "tittle": "Github",
+            "text": "All my repositories so you can take a look at my programming skills."
+        },
+        "item3" : {
+            "tittle": "Google Play",
+            "text": "My Android developer profile."
+        },
+        "item4" : {
+            "tittle": "Gamer Rest",
+            "text": "My website and personal project as a Full Stack Web Developer."
+        },
+        "buttonText" : "Not everything can be contained in a single website!",
+        "nextButton" : "CONTACT",
+        "prevButton" : "EXPERIENCE"
+    },
+    "contact" : {
+        "sendEmail" : {
+            "tittle" : "You can use the following form to send me an email",
+            "label1" : "Name",
+            "label2" : "Email",
+            "label3" : "Subject",
+            "label4" : "Message",
+            "button" : "Send"
+        },
+        "info" : {
+            "phone" : "<b>Phone:</b> 661 34 86 16",
+            "email" : "<b>Email:</b> adrianginergimenez@gmail.com"
+        },
+        "buttonText" : "Do you want to ask me something?",
+        "nextButton" : "ABOUT ME",
+        "prevButton" : "LINKS"
+    },
+    "footer" : {
+        "text" : "© 2024 by Adrian Giner Gimenez"
     }
 }

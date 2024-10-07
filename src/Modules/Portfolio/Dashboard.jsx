@@ -15,13 +15,13 @@ const Dashboard = () => {
                 <h2 className="portfolioPage__tittle">
                     {t("portfolio.dashboard.tittle")}
                 </h2>
-                <p>
+                <p className="portfolioPage__smallText">
                     {t("portfolio.dashboard.text")}
                 </p>
-                <p><b>
+                <p className="portfolioPage__smallText"><b>
                     {t("portfolio.dashboard.type")}
                 </b></p>
-                <p><b>
+                <p className="portfolioPage__smallText"><b>
                     {t("portfolio.dashboard.tech")}
                 </b></p>
             </div>
