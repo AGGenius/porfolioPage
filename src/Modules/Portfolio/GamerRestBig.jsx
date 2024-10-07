@@ -3,29 +3,42 @@ import gamerRestPortalImg from "../../assets/images/GamerRestFront_Basic.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons/faHouse";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation, Trans } from "react-i18next";
 
 const GamerRestBig = () => {
+    //language
+    const { t } = useTranslation();
+
     return (
         <>
             <div className="portfolioPage__textSection--Big">
-                <h2 className="portfolioPage__tittle--Big">GAMER REST</h2>
-                <h3 className="portfolioPage__subtittle--Big">Full Stack Web</h3>
+                <h2 className="portfolioPage__tittle--Big">
+                    {t("portfolio.gamerRest.tittle")}
+                </h2>
+                <h3 className="portfolioPage__subtittle--Big">
+                    {t("portfolio.gamerRest.subTittle")}
+                </h3>
                 <p className="portfolioPage__text--Big">
-                    Se trata de la primera web que desarrollo para porfolio usando todo lo aprendido en mi formación
-                    como <b>Full Stack Web Developer</b>. El Front End hace uso de <b>React.js</b> para la navegación, junto <b>react-router-dom</b>.
-                    El <b>Back End</b> gestiona las peticiones del front para el login/logout de usuarios, así como del registro. También
-                    maneja las peticiones para la creación y edición de todo el contenido de la web, sean usuarios, juegos o entradas para los mismos.
-                    Todas las comunicaciones que manipulen datos se comunican con la base de datos para realizar comprobaciones, crear, editar, o eliminar
-                    contenido. La <b>DDBB usa PostgreSQL</b> como base de datos relacional.
+                        <Trans
+                            i18nKey="portfolio.gamerRest.paragraph1"
+                            components={{b: <b />}}
+                        />
                 </p>
                 <p className="portfolioPage__text--Big">
-                    Con el tiempo se ha convertido en una web completamente funcional que puede <b>visualizarse desde</b> todos los dipositivos de uso
-                    comun, como <b>navegador web, smartphone y tablet</b>.
+                        <Trans
+                            i18nKey="portfolio.gamerRest.paragraph2"
+                            components={{b: <b />}}
+                        />
                 </p>
                 <p className="portfolioPage__text--Big">
-                    Su <b>despliegue</b> esta realizado completamente en los servicios de <b>Render</b>.
+                        <Trans
+                            i18nKey="portfolio.gamerRest.paragraph3"
+                            components={{b: <b />}}
+                        />
                 </p>
-                <p className="portfolioPage__text--Big"><b>JavaScript - HTML5 - CSS3 - API REST - PostgreSQL - Reajct.js - Node.js - Expres.js - react-router-dom - Context - Visual Studio Code - Git - Render</b></p>
+                <p className="portfolioPage__text--Big tech"><b>
+                    {t("portfolio.gamerRest.techBig")}
+                </b></p>
             </div>
             <div className="portfolioPage__media--Big">
                 <img className="portfolioPage__webpagePhoto--Big" src={gamerRestPortalImg} alt="Gamer Rest Webpage Frontpage"></img>

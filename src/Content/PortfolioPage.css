@@ -157,6 +157,12 @@ ul {
 .portfolioPage__tittle {
     font-weight: bold;
     font-size: 1rem;
+
+    color: rgb(70, 66, 82);
+}
+
+.portfolioPage__smallText {
+    color: rgb(48, 46, 53);
 }
 
 .portfolioPage__media {
@@ -245,19 +251,22 @@ ul {
     justify-content: flex-start;
     align-items: center;
 
+    color: rgb(70, 66, 82);
+
     padding: 1rem;
 }
 
 .portfolioPage__tittle--Big {
     font-size: 2rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .portfolioPage__subtittle--Big {
     font-size: 1.2rem;
     font-weight: 600;
 
-    color: rgb(110, 101, 136);
+    color: rgb(48, 46, 53);
 
     margin-bottom: .5rem;
 }
@@ -267,6 +276,10 @@ ul {
 
     font-size: 1rem;
     text-align: left;
+}
+
+.portfolioPage__text--Big.tech {
+    text-align: center;
 }
 
 .portfolioPage__list--Big {

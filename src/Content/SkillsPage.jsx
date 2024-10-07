@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useChangePageContext } from "../Context/useChangePageContext";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import Marquee from "react-fast-marquee";
 import './SkillsPage.css'
 
@@ -39,6 +40,9 @@ const SkillsPage = () => {
     const [skillPageSelector, setSkillPageSelector] = useState("web");
     const [changeCard, setChangeCard] = useState(false);
     const [marqueePlay, setMarqueePlay] = useState(false);
+
+    //language
+    const { t } = useTranslation();
 
     useEffect(() => {
         setChangePage(false);
@@ -80,7 +84,6 @@ const SkillsPage = () => {
             setSkillPage(newPage);
         }, 500);
     }
-
 
     return (
         <div className={!exit ? "skillsPage" : "skillsPage exit"}>
@@ -135,19 +138,29 @@ const SkillsPage = () => {
                 <section className="skillsPage__mainTextWrap">
                     <ul className="skillsPage__mainTextWrap--list">
                         <li className={skillPageSelector === "web" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("web")}>
-                            <p>WEB</p>
+                            <p>
+                                {t("skills.item1")}
+                            </p>
                         </li>
                         <li className={skillPageSelector === "ddbb" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("ddbb")}>
-                            <p>DDBB</p>
+                            <p>
+                                {t("skills.item2")}
+                            </p>
                         </li>
                         <li className={skillPageSelector === "videogames" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("videogames")}>
-                            <p>JUEGOS</p>
+                            <p>
+                                {t("skills.item3")}
+                            </p>
                         </li>
                         <li className={skillPageSelector === "language" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("language")}>
-                            <p>IDIOMAS</p>
+                            <p>
+                                {t("skills.item4")}
+                            </p>
                         </li>
                         <li className={skillPageSelector === "softSkills" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("softSkills")}>
-                            <p>SOFT SKILLS</p>
+                            <p>
+                                {t("skills.item5")}
+                            </p>
                         </li>
                     </ul>
                     <div className={changeCard ? "skillsPage__mainTex--content exit" : "skillsPage__mainTex--content"}>
@@ -160,9 +173,15 @@ const SkillsPage = () => {
                     </div>
                 </section>
                 <section className="skillsPage__buttonWrap">
-                    <button className="skillsPage__button" onClick={() => handleClick("/portfolio")}>PORTFOLIO</button>
-                    <p>Todo un repertorio de habilidades</p>
-                    <button className="skillsPage__button" onClick={() => handleClick("/experience")}>EXPERIENCIA</button>
+                    <button className="skillsPage__button" onClick={() => handleClick("/portfolio")}>
+                        {t("skills.prevButton")}
+                    </button>
+                    <p>
+                        {t("skills.buttonText")}
+                    </p>
+                    <button className="skillsPage__button" onClick={() => handleClick("/experience")}>
+                        {t("skills.nextButton")}
+                    </button>
                 </section>
             </article>
             <div className="skillsPage__space bottom"></div>

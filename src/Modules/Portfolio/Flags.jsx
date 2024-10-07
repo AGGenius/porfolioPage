@@ -2,16 +2,27 @@ import { Link } from "react-router-dom";
 import FlagsPortalImg from "../../assets/images/Banderas_Basic.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation, Trans } from "react-i18next";
 
 const Flags = () => {
+    //language
+    const { t } = useTranslation();
 
     return (
         <>
             <div className="portfolioPage__textSection">
-                <h2 className="portfolioPage__tittle">Diversión con banderas</h2>
-                <p>Web con todas las banderas de los paises del mundo y funciones para ver datos de interes de cada pais.</p>
-                <p><b>Front</b></p>
-                <p><b>JavaScript - HTML5 - CSS3</b></p>
+                <h2 className="portfolioPage__tittle">
+                    {t("portfolio.funWithFlags.tittle")}
+                </h2>
+                <p className="portfolioPage__smallText">
+                    {t("portfolio.funWithFlags.text")}
+                </p>
+                <p className="portfolioPage__smallText"><b>
+                    {t("portfolio.funWithFlags.type")}
+                </b></p>
+                <p className="portfolioPage__smallText"><b>
+                    {t("portfolio.funWithFlags.tech")}
+                </b></p>
             </div>
             <div className="portfolioPage__media">
                 <img className="portfolioPage__webpagePhoto" src={FlagsPortalImg} alt="Gamer Rest Webpage Frontpage"></img>

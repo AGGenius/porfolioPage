@@ -19,7 +19,7 @@ nav {
 
 nav.colapsed {
     width: 90%;
-    min-height: 280px;
+    min-height: 310px;
     gap: 1rem;
 
     display: flex;
@@ -88,15 +88,42 @@ nav.colapsed {
 
 .nav__link {
     color: rgb(245, 245, 245);
+
+    padding-bottom: .1rem;
+
+    transition: all .5s;
 }
 
 .nav__link:hover {
     color: rgb(198, 227, 236);
+
+    transition: all .5s;
 }
 
 .nav__link.selected {
     color: rgb(220, 240, 247);
-    text-decoration: underline;
+    border-bottom: 1px solid rgb(220, 240, 247);
+
+    transition: all .5s;
+}
+
+.nav__language {
+    color: rgb(202, 235, 232);
+
+    border-left: 3px solid rgb(202, 235, 232);
+
+    margin-left: 1rem;
+    padding-left: .5rem;
+
+    transition: all .3s;
+}
+
+.nav__language:hover {
+    color: rgb(255, 255, 238);
+
+    border-left: 3px solid rgb(255, 255, 238);
+
+    transition: all .3s;
 }
 
 @media screen and (max-width: 1200px) {
@@ -117,5 +144,16 @@ nav.colapsed {
 
     .nav__colapsed {
         display: flex;
+    }
+
+    .nav__language {
+        border-right: 3px solid rgb(202, 235, 232);
+    
+        padding: 0 .5rem;
+        margin-left: 0;
+    }
+    
+    .nav__language:hover {
+        border-right: 3px solid rgb(255, 255, 238);
     }
 }

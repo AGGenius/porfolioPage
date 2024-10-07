@@ -123,6 +123,8 @@
     background-clip: content-box, border-box;
     border-radius: 0 25px 25px 0;
     border-left: 1px double transparent;
+
+    transition: all .3s;
 }
 
 .skillsPage__mainTextWrap--item p {
@@ -140,6 +142,8 @@
     border-left: 10px;
     border-radius: 0 25px 25px 0;
     border-left: 1px double transparent;
+
+    transition: all .3s;
 }
 
 .skillsPage__mainTextWrap--item:active {
@@ -234,6 +238,7 @@
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
+    color: rgb(50, 47, 58);
 
     margin-top: 3rem;
 }
@@ -334,6 +339,7 @@
 
     text-align: left;
     font-size: 1.3rem;
+    color: rgb(48, 46, 53);
 
     padding: 0 2rem;
 }
@@ -571,6 +577,8 @@ b {
         background-image: linear-gradient(to bottom, rgb(126, 114, 209), rgb(156, 176, 233)),
             linear-gradient(to bottom, rgb(106, 90, 205), rgb(156, 176, 233));
         border-radius: 0 0 25px 25px;
+        border-bottom: 0px double transparent;
+        border-left: 0px double transparent;
         border-top: 0px double transparent;
     }
 
@@ -582,8 +590,8 @@ b {
         background-clip: content-box, border-box;
         border-bottom: 0px double transparent;
         border-left: 0px double transparent;
-        border-radius: 0 0 25px 25px;
         border-top: 0px double transparent;
+        border-radius: 0 0 25px 25px;
     }
 
     .skillsPage__mainTex--content {
@@ -644,34 +652,34 @@ b {
         width: 100%;
         height: 100%;
         gap: 1.5rem;
-    
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
+
         margin-top: .5rem;
         margin-bottom: 1.5rem;
     }
 
     .skillsPage__text {
         width: 100%;
-    
+
         text-align: center;
         font-size: 1.1rem;
-    
+
         padding: 0 .5rem;
     }
 
     .skillsPage__imgWrap {
         width: 95%;
         height: 100%;
-    
+
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-    
+
         padding-bottom: 1.5rem;
     }
 
@@ -682,7 +690,7 @@ b {
     .skillsPage__imgCreator {
         position: relative;
         font-size: .8rem;
-    
+
         text-align: right;
     }
 
@@ -692,12 +700,12 @@ b {
         width: 100%;
         height: 100%;
         gap: 4rem;
-    
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
+
         margin-bottom: 2rem;
     }
 
@@ -706,10 +714,10 @@ b {
         height: auto;
         gap: 1.5rem;
     }
-    
+
     .skillsPage__list--item {
         width: 100%;
-    
+
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -739,9 +747,9 @@ b {
 
     .skillsPage__listWrap--row {
         width: 95%;
-    
+
         flex-direction: column;
-    
+
         padding: 0;
     }
 
@@ -749,7 +757,7 @@ b {
         width: 100%;
         height: auto;
         gap: 1rem;
-    
+
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -760,9 +768,9 @@ b {
         width: 100%;
     }
 
-    .skillsPage__textSoft {    
+    .skillsPage__textSoft {
         text-align: center;
-    
+
         padding: 0;
     }
 
@@ -770,7 +778,7 @@ b {
         width: 100%;
         height: auto;
         gap: 1rem;
-    
+
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
