@@ -231,7 +231,7 @@ b {
     100% {opacity: 0; transform: scaleX(0);}
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px), screen and (max-height: 800px) {
     .contactPage__content {
         justify-content: flex-start;
 
@@ -241,6 +241,7 @@ b {
     }
 
     .contactPage__formWrap {
+        max-width: 800px;
         height: auto;
         gap: 1rem;
     }
@@ -295,6 +296,7 @@ b {
 
     .contactPage__contactData {
         width: 95%;
+        max-width: 800px;
         min-height: 110px;
         height: auto;
         gap: 1rem;

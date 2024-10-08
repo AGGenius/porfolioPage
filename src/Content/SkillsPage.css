@@ -528,7 +528,7 @@ b {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px), screen and (max-height: 800px) {
 
     .skillsPage__marquee--img {
         margin-left: 50px;
@@ -568,6 +568,7 @@ b {
 
     .skillsPage__mainTextWrap--item {
         width: 20%;
+        max-width: 150px;
         height: 100%;
 
         writing-mode: vertical-lr;
@@ -596,6 +597,7 @@ b {
 
     .skillsPage__mainTex--content {
         width: 100%;
+        max-width: 1300px;
         height: auto;
 
         display: flex;

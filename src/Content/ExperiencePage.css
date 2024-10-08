@@ -260,7 +260,8 @@
         transform: scaleX(0);
     }
 }
-@media screen and (max-width: 1200px) { 
+
+@media screen and (max-width: 1500px), screen and (max-height: 800px) {
     .experiencePage__content {
         justify-content: flex-start;
 
@@ -294,6 +295,7 @@
 
     .experiencePage__listItem {
         width: 95%;
+        max-width: 1300px;
         height: auto;
         gap: 1.2rem;
     

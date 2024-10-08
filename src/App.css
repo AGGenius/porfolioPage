@@ -38,7 +38,7 @@ body {
 
   background-color: rgb(198, 191, 230);
 
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 @media screen and (max-width: 1000px) {

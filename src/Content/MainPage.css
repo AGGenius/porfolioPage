@@ -1,4 +1,4 @@
-.mainPage { 
+.mainPage {
     width: 100%;
     height: 100%;
 
@@ -14,16 +14,17 @@
     animation: changePageAnimation .4s linear forwards;
 }
 
-.mainPage__space, .top{
+.mainPage__space,
+.top {
     width: 90%;
     height: 5%;
 }
 
-.mainPage__space.top{  
+.mainPage__space.top {
     border-left: 5px solid slateblue;
 }
 
-.mainPage__space.bottom{  
+.mainPage__space.bottom {
     border-right: 5px solid slateblue;
 }
 
@@ -33,13 +34,13 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
     color: rgb(37, 37, 51);
 
     background-color: rgb(166, 165, 219);
-    
+
     border: 5px solid slateblue;
     border-top: 2px solid slateblue;
     border-right: 2px solid slateblue;
@@ -48,7 +49,7 @@
 
 .mainPage__text {
     width: 100%;
-    height: 90%;
+    height: 95%;
     gap: .7rem;
 
     display: flex;
@@ -191,77 +192,125 @@ i {
 }
 
 @keyframes changePageAnimationIntro {
-    0% {opacity: 0;  transform: scaleX(0);}
-    50%  {opacity: .5; transform: scaleX(1);}
-    75% {opacity: 1; }
-    100% {opacity: 1; transform: scaleX(1);}
+    0% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    50% {
+        opacity: .5;
+        transform: scaleX(1);
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
 }
 
 @keyframes changePageAnimation {
-    0% {opacity: 1;  transform: scaleX(1);}
-    50%  {opacity: .5; transform: scaleX(.5);}
-    75% {opacity: 0; }
-    100% {opacity: 0; transform: scaleX(0);}
+    0% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+
+    50% {
+        opacity: .5;
+        transform: scaleX(.5);
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
 }
 
 @keyframes changePageAnimationPhoto {
-    0% {opacity: 0;}
-    100% {opacity: 0;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes changePageAnimationPhotoIntro {
-    0% {opacity: 0; transform: scaleX(1)}
-    50%  {opacity: 0; transform: scaleX(1)}
-    75% {opacity: .1;  transform: scaleX(1)}
-    100% {opacity: 1; display: flex}
+    0% {
+        opacity: 0;
+        transform: scaleX(1)
+    }
+
+    50% {
+        opacity: 0;
+        transform: scaleX(1)
+    }
+
+    75% {
+        opacity: .1;
+        transform: scaleX(1)
+    }
+
+    100% {
+        opacity: 1;
+        display: flex
+    }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px), screen and (max-height: 800px) {
     .mainPage__content {
         justify-content: flex-start;
 
-        overflow: scroll;
+        overflow-y: scroll;
 
         padding-bottom: 1rem;
     }
-    
+
     .mainPage__text {
         width: 100%;
         height: auto;
         gap: .8rem;
 
         justify-content: flex-start;
-    
+
         padding: 1.5rem;
     }
 
     .mainPage__mainTittle {
         font-size: 2rem;
     }
-    
+
     .mainPage__subTittle {
         font-size: 1.2rem;
     }
-    
+
     .mainPage__tittleClosure {
         font-size: 1rem;
     }
-    
+
     .mainPage__paraQuestion {
         width: 100%;
 
         font-size: 1rem;
-    
+
         margin-top: 1rem;
     }
-    
+
     .mainPage__paraQuestion:first-child {
         margin-top: 0;
     }
-    
+
     .mainPage__paraContent {
         width: 100%;
-    
+
         font-size: .9rem;
     }
 
@@ -271,9 +320,9 @@ i {
         gap: 1rem;
     }
 
-    .mainPage__buttonWrap p{
+    .mainPage__buttonWrap p {
         width: 120px;
-        
+
         font-size: .7rem;
     }
 
@@ -285,7 +334,7 @@ i {
         margin-top: 1.5rem;
         margin-left: 0;
     }
-    
+
     .mainPage__photoBigWrap {
         align-items: flex-start;
 
@@ -293,7 +342,7 @@ i {
 
         padding-top: 100px;
     }
-    
+
     .mainPage__photoBig {
         width: 90%;
     }

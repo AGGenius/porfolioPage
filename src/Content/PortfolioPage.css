@@ -377,11 +377,14 @@ b {
     100% {opacity: 1; transform: scale(1);}
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-height: 850px) {
+}
+
+@media screen and (max-width: 1500px), screen and (max-height: 800px) {
     .portfolioPage__content {
         justify-content: flex-start;
 
-        overflow: scroll;
+        overflow-y: scroll;
 
         padding-bottom: 1rem;
     }
