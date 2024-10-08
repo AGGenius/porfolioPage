@@ -13,13 +13,13 @@
         "subTittle" : "You are on my reference page. Here you can learn a little more about me and my projects.",
         "tittleClosure" : "Think of it as an interactive resume. Cool, right?",
         "paragraphQuestion1" : "Who am I?",
-        "paragraph1" : "That's simple, I'm <i>Adrián Giner Giménez</i>, a person with a restless mind, who always has something to say if the situation requires it and a great ability to contribute ideas. My ability to concentrate when I'm working on my projects can make me lose track of time!",
+        "paragraph1" : "That's simple, I'm <i>Adrian Giner Gimenez</i>, a person with a restless mind, who always has something to say if the situation requires it and a great ability to contribute with ideas. My ability to concentrate when I'm working at any task can make me lose track of time!",
         "paragraphQuestion2" : "What do I do?",
-        "paragraph2" : "Programming! It's what I've loved the most since I started learning <b>Java</b> on my own. Once I discovered my passion, I wanted to give it a professional focus, and I combined my passion for <b>video games and programming</b> by studying several courses focused on <b>Unity 3D and C#</b>. Since I can't stop my thirst for knowledge, I took another small turn towards web programming, taking an intense bootcamp as a <b>full stack web developer</b>, which I complemented on my own.",
+        "paragraph2" : "Programming! It's what I've loved the most since I started learning <b>Java</b> on my own. Once I discovered my passion, I wanted to give it a professional focus, and I combined my passion for <b>video games and programming</b> by studying several courses focused on <b>Unity 3D and C#</b>. Since I can't stop my thirst for knowledge I took another small turn towards web programming, taking an intense bootcamp as a <b>full stack web developer</b>, which I complemented on my own.",
         "paragraphQuestion3" : "But I like more things in life, don't I?",
-        "paragraph3" : "For this I would need a good while, but I will be brief... I play video games <i>(RPG, puzzles, adventure, metroidvania, etc)</i>, I like to read <i>(science fiction, fantasy, mystery, horror, etc)</i>, learn about technology and space science <i>(Go Space X! 🚀)</i>, draw, and enjoy nature and visit the zoo from time to time.",
+        "paragraph3" : "For this I would need a good while, but I will be brief... I play video games <i>(RPG, puzzles, adventure, metroidvania, etc.)</i>, I like to read <i>(science fiction, fantasy, mystery, horror, etc.)</i>, learn about technology and space science <i>(Go Space X! 🚀)</i>, draw, and enjoy nature and visit the zoo from time to time.",
         "paragraphQuestion4" : "Ok, but you are looking for someone for your company. What can I contribute?",
-        "paragraph4" : "Let's get technical: <b>Demonstrable knowledge applied</b> to real projects as a Unity 3D programmer, for 2D, 3D and VR/AR games, with C#. But my strong point is that of a certified full stack web designer, using <b>JavaScript, React.js, Node.js, Express.js, HTML, CSS, DB (Relational with PostgreSQL or non-relational with MongoDB), version control with GIT/Github</b>. I'm not closed to specializing in Front or Back, right now I enjoy both sides of the battlefield.",
+        "paragraph4" : "Let's get technical: <b>Demonstrable knowledge applied</b> to real projects as a Unity 3D programmer, for 2D, 3D and VR/AR games with C#. But my strong point is that I am a certified full stack web developer, using <b>JavaScript, React.js, Node.js, Express.js, HTML, CSS, DB (Relational with PostgreSQL or non-relational with MongoDB), version control with GIT/Github</b>. I'm not closed to specializing in Front or Back, right now I enjoy both sides of the battlefield.",
         "paragraph5" : "Oh, I didn't put any brakes on learning more <i>(Angular, I say that for you)</i>. So don't forget to stop by here from time to time to see what else has changed.",
         "paragraph6" : "On a personal level, I am an <b>enthusiastic, respectful person, with a great capacity for problem solving, resourceful, flexible and cooperative</b>. I have a great knack for making people laugh by saying the right thing at the right time.",
         "buttonText" : "Check out the rest to find out more!",
@@ -44,7 +44,7 @@
             "type" : "Front",
             "tech" : "JavaScript - HTML5 - CSS3 - Node.js - Axios.js - react-router-dom",
             "subTittle" : "React Web",
-            "paragraph1" : "Functional development of a website using <b>React.js</b> to keep a visual control of the Cryptocurrency market. You can check the full value by clicking on the card of the currency you are interested in, as well as the functionality to be able to <b>save a list</b> of favorite currencies and thus keep a more direct track of them. This data, due to its simplicity, is saved in the <b>Local Storage</b> of the browser.",
+            "paragraph1" : "Functional development of a website with <b>React.js</b> to keep a visual control of the Cryptocurrency market. You can check the full value by clicking on the card of the currency you are interested in, as well as the functionality to be able to <b>save a list</b> of favorite currencies and thus keep a more direct track of them. This data, due to its simplicity, is saved in the <b>Local Storage</b> of the browser.",
             "paragraph2" : "This is an example of functional use of a website created from scratch focused on the use of <b>React</b>, showing much of its functionality.",
             "techBig" : "JavaScript - HTML5 - CSS3 - API Scraping - Reajct.js - Node.js - Expres.js - React-Router-Dom - LocalStorage - Visual Studio Code - Git"
         },
@@ -61,7 +61,7 @@
             "listItem3" : "Secure password generator (between 12 and 50 characters. At least one uppercase and one lowercase letter, one number and one special character). The generator checks that it generates a valid password by using tests.",
             "listItem4" : "Integrated Google search engine.",
             "listItem5" : "Module with weather forecast. This can be customized by the user to show the weather forecast for the desired area.",
-            "listItem6" : "Background that changes randomly according to the user's own selection. It is enabled to show the original creator in case of an image with rights, as well as offering a direct link to the repertoire of said creator.",
+            "listItem6" : "Background that changes randomly. It is enabled to show the original creator in case of an image with rights, as well as offering a direct link to the repertoire of said creator.",
             "techBig" : "JavaScript - HTML5 - CSS3 - API Scraping - LocalStorage - Promise - Deployment - Visual Studio Code - Git"
         },
         "funWithFlags" : {
@@ -168,7 +168,7 @@
     "experience" : {
         "date" : "TODAY",
         "item1" : {
-            "tittle" : "Multidisciplinary programmer",
+            "tittle" : "Multidisciplinary Programmer",
             "subTittle" : "Freelance",
             "timeline" : "09/2023 - Now",
             "type" : "Remote",

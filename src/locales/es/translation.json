@@ -10,15 +10,15 @@
     },
     "mainPage": {
         "tittle": "¡BIENVENID@!",
-        "subTittle": "Te encuentras en mi pagina de referencia. Aquí podras saber un poco más de mi y mis proyectos.",
+        "subTittle": "Te encuentras en mí página de referencia. Aquí podrás saber un poco más de mí y mis proyectos.",
         "tittleClosure": "Piensa en ello como un CV interactivo. ¿Mola, a que si?",
         "paragraphQuestion1": "¿Quién soy?",
         "paragraph1": "Eso es sencillo, soy <i>Adrián Giner Giménez</i>, una ser de mente inquieta, que siempre tiene algo que decir si la situación lo requiere y gran capacidad para aportar ideas. ¡Mi capacidad de concentración cuando estoy con mis proyectos puede hacerme perder la noción del tiempo!",
         "paragraphQuestion2": "¿Qué hago?",
         "paragraph2": "¡Programar! Es lo que más me gusta desde que empecé por mi cuenta a aprender <b>Java</b>. Una vez descubierta mi pasión le quise dar un enfoque profesional, y junté mi pasión por los <b>videojuegos y la programación</b> estudiando varios cursos centrados en <b>Unity 3D y C#</b>. Como no puedo frenar mi sed de conocimientos, di otro pequeño giro hacia la programación web, realizando un intenso bootcamp como <b>full stack web developer</b>, que fui complementando por mi cuenta.",
         "paragraphQuestion3": "¿Pero me gustarán más cosas en la vida, no?",
-        "paragraph3": "Para esto necesitaría un buen rato, pero seré breve… Juego a videojuegos <i>(RPG, puzles, aventura, metroidvania, etc)</i>, me gusta leer <i>(ciencia ficción, fantasía, misterio, terror, etc)</i>, aprender sobre tecnología y ciencia espacial <i>(Go Space X! 🚀)</i>, dibujar, y disfrutar de la naturaleza y visitar algún zoo de vez en cuando.",
-        "paragraphQuestion4": "Vale, pero estas buscando alguien para tu empresa ¿Qué puedo aportar?",
+        "paragraph3": "Para esto necesitaría un buen rato, pero seré breve… Juego a videojuegos <i>(RPG, puzles, aventura, metroidvania, etc.)</i>, me gusta leer <i>(ciencia ficción, fantasía, misterio, terror, etc.)</i>, aprender sobre tecnología y ciencia espacial <i>(Go Space X! 🚀)</i>, dibujar, y disfrutar de la naturaleza y visitar algún zoo de vez en cuando.",
+        "paragraphQuestion4": "Vale, pero estás buscando alguien para tu empresa ¿Qué puedo aportar?",
         "paragraph4": "Nos ponemos técnicos: <b>Conocimientos demostrables y aplicados</b> a proyectos reales como programador en Unity 3D, tanto para juegos en 2D, 3D y VR/AR, con C#. Pero mi punto fuerte es el de diseñador web full stack certificado, usando <b>JavaScript, React.js, Node.js, Express.js, HTML, CSS, BBDD (Relacionales con PostgreSQL o no relacionales con MongoDB), control de versiones con GIT/Github</b>. No me cierro a especializarme en Front o Back, ahora mismo disfruto a ambos lados del campo de batalla.",
         "paragraph5": "¡Ah! No puse freno a aprender más <i>(Angular, lo digo por ti)</i>. Así que no olvides pasarte por aquí de vez en cuando a ver que más ha cambiado.",
         "paragraph6": "A nivel personal soy una persona <b>entusiasta, respetuosa, con gran capacidad de resolución de problemas, ingenioso, flexible y cooperativo</b>. Tengo gran facilidad para hacer reír diciendo la cosa oportuna en el momento oportuno.",
@@ -34,8 +34,8 @@
             "tech": "JavaScript - HTML5 - CSS3 - PostgreSQL - Reajct.js - Node.js - Expres.js",
             "subTittle": "Full Stack Web",
             "paragraph1": "Se trata de la primera web que desarrollo para porfolio usando todo lo aprendido en mi formación como <b>Full Stack Web Developer</b>. El <b>Front End</b> hace uso de <b>React.js</b> para la navegación, junto <b>react-router-dom</b>. El <b>Back End</b> gestiona las peticiones del front para el login/logout de usuarios, así como del registro. También maneja las peticiones para la creación y edición de todo el contenido de la web, sean usuarios, juegos o entradas para los mismos. Todas las comunicaciones que manipulen datos se comunican con la base de datos para realizar comprobaciones, crear, editar, o eliminar contenido. La <b>DDBB usa PostgreSQL</b> como base de datos relacional.",
-            "paragraph2": "Con el tiempo se ha convertido en una web completamente funcional que puede <b>visualizarse desde</b> todos los dipositivos de uso comun, como <b>navegador web, smartphone y tablet</b>.",
-            "paragraph3": "Su <b>despliegue</b> esta realizado completamente en los servicios de <b>Render</b>.",
+            "paragraph2": "Con el tiempo se ha convertido en una web completamente funcional que puede <b>visualizarse desde</b> todos los dispositivos de uso común, como <b>navegador web, smartphone y tablet</b>.",
+            "paragraph3": "Su <b>despliegue</b> está realizado completamente en los servicios de <b>Render</b>.",
             "techBig": "JavaScript - HTML5 - CSS3 - API REST - PostgreSQL - Reajct.js - Node.js - Expres.js - react-router-dom - Context - Visual Studio Code - Git - Render"
         },
         "reactCoin": {
@@ -44,46 +44,46 @@
             "type": "Front",
             "tech": "JavaScript - HTML5 - CSS3 - Node.js - Axios.js - react-router-dom",
             "subTittle": "React Web",
-            "paragraph1": "Desarrollo funcional de una web con el uso de <b>React.js</b> para llevar un control visual del mercado de Cryptomonedas. Se puede consultar el valor completo al clicar la tarjeta de la moneda en que nos interese, así como la funcionalidad para poder <b>guardar un listado</b> de monedas favoritas y así llevar un seguimiento mas directo de las mismas. Estos datos, por su simpleza se guardanen el <b>Local Storage</b> del navegador.",
-            "paragraph2": "Se trata de un ejemplo de uso funcional de una web creada de cero enfocada en el uso de <b>React</b>, mostrando gran parte de sus funcionalidades.",
+            "paragraph1": "Desarrollo funcional de una web con el uso de <b>React.js</b> para llevar un control visual del mercado de Cryptomonedas. Se puede consultar el valor completo al clicar la tarjeta de la moneda en que nos interese, así como la funcionalidad para poder <b>guardar un listado</b> de monedas favoritas y así llevar un seguimiento mas directo de las mismas. Estos datos, por su simpleza se guardan en el <b>Local Storage</b> del navegador.",
+            "paragraph2": "Se trata de un ejemplo de uso funcional de una web creada de cero enfocada la utilización de <b>React</b>, mostrando gran parte de sus funcionalidades.",
             "techBig": "JavaScript - HTML5 - CSS3 - API Scraping - Reajct.js - Node.js - Expres.js - React-Router-Dom - LocalStorage - Visual Studio Code - Git"
         },
         "dashboard": {
             "tittle": "Dashboard",
-            "text": "Web con multiples funciones para usar como pagina principal de navegador.",
+            "text": "Web con múltiples funciones para usar como página principal de navegador.",
             "type": "Front",
             "tech": "JavaScript - HTML5 - CSS3",
             "subTittle": "Web Sencilla",
-            "paragraph1": "Ejemplo de desarrollo frontend basico con el objetivo de crear una web para usar como Home de navegador. Sus distintas funcionalidades son:",
-            "paragraph2": "Cada uno de estos modulos puede ser usado a su vez de manera independiente en su sección propia, agregando funcionalidades extra, como en el modulo de clima donde se pueden agregar varias zonas para visualizar y elegir cual se mostrará en la pagina principal.",
+            "paragraph1": "Ejemplo de desarrollo Front básico con el objetivo de crear una web para usar como Home de navegador. Sus distintas funcionalidades son:",
+            "paragraph2": "Cada uno de estos módulos puede ser usado a su vez de manera independiente en su sección propia, agregando funcionalidades extra, como en el modulo de clima donde se pueden agregar varias zonas para visualizar y elegir cual se mostrará en la página principal.",
             "listItem1": "Reloj que muestra la hora y fecha actual con mensajes personalizados al usuario.",
             "listItem2": "Agregador de enlaces a otras webs con funcionalidad de comprobación de enlace valido.",
-            "listItem3": "Generador de contraseñas seguras (entre 12 y 50 caracteres. Minimo una letra mayuscula y una minuscula, un numero y un caracter especial). El generador comprueba que genera una contraseña valida haciendo uso de tests.",
+            "listItem3": "Generador de contraseñas seguras (entre 12 y 50 caracteres. Mínimo una letra mayúscula y una minúscula, un numero y un carácter especial). El generador comprueba que genera una contraseña valida haciendo uso de test.",
             "listItem4": "Buscador integrado de Google.",
-            "listItem5": "Modulo con la previsión climatologica. Esta puede ser personalizada por el usuario para mostrar la de la zona que desee.",
-            "listItem6": "Fondo que cambia de manera aleatoria según selección propia del usuario. Esta habilitado a mostrar al creador original en caso de ser una imagen con derechos, así como ofrecer un enlace directo al repertorio de dicho creador.",
+            "listItem5": "Modulo con la previsión climatológica. Esta puede ser personalizada por el usuario para mostrar la de la zona que desee.",
+            "listItem6": "Fondo que cambia de manera aleatoria. Esta habilitado a mostrar al creador original en caso de ser una imagen con derechos, así como ofrecer un enlace directo al repertorio de dicho creador.",
             "techBig": "JavaScript - HTML5 - CSS3 - API Scraping - LocalStorage - Promise - Deployment - Visual Studio Code - Git"
         },
         "funWithFlags": {
             "tittle": "Diversión con banderas",
-            "text": "Web con todas las banderas de los paises del mundo y funciones para ver datos de interes de cada pais.",
+            "text": "Web con todas las banderas de los países del mundo y funciones para ver datos de interés de cada país.",
             "type": "Front",
-            "tech": "avaScript - HTML5 - CSS3",
-            "subTittle": "Web basica de Scraping API",
-            "paragraph1": "Una de mis primeras webs de prueba que trae los datos de la API Rest Countries, de la cual se obtienen todos los paises para mostrar una tarjeta identificadora con la bandera y nombre internacional del pais.",
-            "paragraph2": "Cuando interactuamos con una de las tarjetas nos muestra en la misma ventana una nueva tarjeta con información ampliada sobre dicho pais, con la cual podemos interactuar para cerrarlo y volver a ver el listado completo.",
-            "paragraph3": "Aunque de inicio se trata de una web basica, es también uno de los primeros ejemplos que integra todas las bases de la programación web, como es <b>HTML, CSS, y JavaScript</b>",
+            "tech": "JavaScript - HTML5 - CSS3",
+            "subTittle": "Web básica de Scraping API",
+            "paragraph1": "Una de mis primeras webs de prueba que trae los datos de la API Rest Countries, de la cual se obtienen todos los países para mostrar una tarjeta identificadora con la bandera y nombre internacional del país.",
+            "paragraph2": "Cuando interactuamos con una de las tarjetas nos muestra en la misma ventana una nueva tarjeta con información ampliada sobre dicho país, con la cual podemos interactuar para cerrarlo y volver a ver el listado completo.",
+            "paragraph3": "Aunque de inicio se trata de una web básica, es también uno de los primeros ejemplos que integra todas las bases de la programación web, como es <b>HTML, CSS, y JavaScript</b>",
             "techBig": "JavaScript - HTML5 - CSS3 - API Scraping - LocalStorage - Visual Studio Code - Git"
         },
         "atomicChamber": {
             "tittle": "Atomic Chamber",
-            "text": "Juego movil para android gratuito con anuncios de logica y puzzles.",
+            "text": "Juego móvil para Android gratuito con anuncios de lógica y puzles.",
             "tech": "Unity 3D - C# - Admob - Logros de Google Play",
-            "subTittle": "Videojuego para moviles Android",
-            "paragraph1": "<b>Mi primer proyecto completo e independiente como desarrollador de videojuegos</b>. Se trata de un juego para movil gratuito con anuncios, cuya mecanica es detonar las particulas dentro de la camara de reacción.",
-            "paragraph2": "Según la cantidad que hagan reacción podrás proguesar al siguiente nivel, además conseguirás mas puntos para invertir en <b>mejoras</b> para cada tipo de particula, como a la capacidad de toque para iniciar las reacciones.",
-            "paragraph3": "Consta de 40 niveles desbloqueables de manera natural con el progreso del juego, así como un <b>modo infinito</b> desbloqueable al completarlo con la maxima puntuación en cada nivel. En el podrás elegir que cantidad de particulas de cada tipo quieres que aparezcan, asi como variar parametros del juego.",
-            "paragraph4": "El juego cuenta con un sistema de <b>logros</b> integrando los servicios de <b>Google Play</b>, cambio de idiomas y opciones para seleccionar que pista de audio quieres utilizar o si quieres que haga un ciclo aleatorio, o reiniciar los datos guardados. Todo el arte gráfico del juego esta realizado por mi mismo, salvo tipografia.",
+            "subTittle": "Videojuego para móviles Android",
+            "paragraph1": "<b>Mi primer proyecto completo e independiente como desarrollador de videojuegos</b>. Se trata de un juego para móvil gratuito con anuncios, cuya mecánica es detonar las partículas dentro de la cámara de reacción.",
+            "paragraph2": "Según la cantidad que hagan reacción podrás progresar al siguiente nivel, además conseguirás mas puntos para invertir en <b>mejoras</b> para cada tipo de partícula, como a la capacidad de toque para iniciar las reacciones.",
+            "paragraph3": "Consta de 40 niveles desbloqueables de manera natural con el progreso del juego, así como un <b>modo infinito</b> desbloqueable al completarlo con la máxima puntuación en cada nivel. En el podrás elegir que cantidad de partículas de cada tipo quieres que aparezcan, así como variar parámetros del juego.",
+            "paragraph4": "El juego cuenta con un sistema de <b>logros</b> integrando los servicios de <b>Google Play</b>, cambio de idiomas y opciones para seleccionar que pista de audio quieres utilizar o si quieres que haga un ciclo aleatorio, o reiniciar los datos guardados. Todo el arte gráfico del juego está realizado por mi mismo, salvo tipografía.",
             "techBig": "Unity 3D - C# - Admob - Logros de Google Play"
         },
         "buttonText": "Ejemplos de mi desarrollo como programador",
@@ -99,7 +99,7 @@
         "web": {
             "tittle": "DESARROLLADOR WEB FULL STACK",
             "paragraph1": "Creación, despliegue y control de servicios de <b>Back End y Front End</b> completos.",
-            "paragraph2": "Proeficiente en la programación de paginas web haciendo uso de <b>HTML - CSS - JavaScript </b> para crear contenidos interesantes y dinamicos al aplicar <b>Node.js, React.js, y Expres.js</b>, incrementando la capacidad y funcionalidades del servicio. ",
+            "paragraph2": "Proficiente en la programación de páginas web haciendo uso de <b>HTML - CSS - JavaScript </b> para crear contenidos interesantes y dinámicos al aplicar <b>Node.js, React.js, y Expres.js</b>, incrementando la capacidad y funcionalidades del servicio. ",
             "paragraph3": "Conocimientos y control de <b>AUTH0, JWT</b> para el manejo de usuarios. Manejo de <b>Fetch y Axios</b>, así como <b>HTTP</b> para las peticiones de Front a Back y de este mismo al resto de servicios, así como uso de <b>REST API</b>.",
             "imageText": "Imagen creada por vectorjuice en Freepik"
         },
@@ -114,7 +114,7 @@
         "games": {
             "tittle": "DESARROLLO DE VIDEOJUEGOS",
             "paragraph1": "Gran conocimiento de programación de videojuegos en <b>Unity 3D</b> con <b>C#</b>.",
-            "paragraph2": "Programación de videojuegos <b>2D - 3D - VR - AR</b>, testing de los mismos y publicación de proyectos en <b>Google Play Store</b>, incluyendo el uso y manejo de anuncios así como el sistema de logros de <b>Google Play</b>. Creación e implementanción de assets. <b>Control de sonido 3D</b>. Manejo de <b>Agent Navigation y Pathfinding</b>.",
+            "paragraph2": "Programación de videojuegos <b>2D - 3D - VR - AR</b>, testing de los mismos y publicación de proyectos en <b>Google Play Store</b>, incluyendo el uso y manejo de anuncios así como el sistema de logros de <b>Google Play</b>. Creación e implementación de assets. <b>Control de sonido 3D</b>. Manejo de <b>Agent Navigation y Pathfinding</b>.",
             "paragraph3": "Experiencia de más de dos años de programando en <b>C#</b>, con el cual me certifiqué tras iniciarme en la programación de forma autodidacta con <b>Java</b>, y previo a dar mi salto como <b>Full Stack Web Developer</b>",
             "imageText": "Imagen creada por mi"
         },
@@ -125,21 +125,21 @@
                 "item1": "<b>Lectura:</b> Nativo",
                 "item2": "<b>Escritura:</b> Nativo",
                 "item3": "<b>Conversación:</b> Nativo",
-                "item4": "Se trata del lenguaje oficial de mi pais y con el que comencé a desenvolverme. "
+                "item4": "Se trata del lenguaje oficial de mi país y con el que comencé a desenvolverme. "
             },
             "language2": {
                 "lang": "INGLES",
                 "item1": "<b>Lectura:</b> Alto",
                 "item2": "<b>Escritura:</b> Alto",
                 "item3": "<b>Conversación:</b> Intermedio",
-                "item4": "En el camino a la certificación por una escuela oficial, sin miedo a ver series o peliculas inglesas en su idioma original, leer libros o buscar información relevante."
+                "item4": "En el camino a la certificación por una escuela oficial, sin miedo a ver series o películas inglesas en su idioma original, leer libros o buscar información relevante."
             },
             "language3": {
                 "lang": "VALENCIANO",
                 "item1": "<b>Lectura:</b> Alto",
                 "item2": "<b>Escritura:</b> Alto",
                 "item3": "<b>Conversación:</b> Alto",
-                "item4": "Otro de los idiomas de mi tierra, mas concretamente de la región donde nací."
+                "item4": "Otro de los idiomas de mi tierra, más concretamente de la región donde nací."
             }
         },
         "softSkills": {
@@ -152,13 +152,13 @@
             "item6": "Cortés",
             "item7": "Sentido del humor",
             "item8": "Constante",
-            "item9": "Logico",
-            "item10": "Pragmatico",
+            "item9": "Lógico",
+            "item10": "Pragmático",
             "item11": "Capacidad de abstracción",
             "item12": "Amable",
             "paragraph1": "Soy una persona con un sentido de crecimiento constante, gran creatividad y sentido del deber.",
-            "paragraph2": "Siempre de trato amable y respetuoso de los demas.",
-            "paragraph3": "Altamente confiable, buscando dar lo mejor de mi mismo.",
+            "paragraph2": "Siempre de trato amable y respetuoso de los demás.",
+            "paragraph3": "Altamente confiable, buscando dar lo mejor de mí mismo.",
             "paragraph4": "Profesional y con un gran desempeño trabajando en equipo, así como potencial para su manejo."
         },
         "buttonText": "Todo un repertorio de habilidades",
@@ -168,8 +168,8 @@
     "experience" : {
         "date" : "HOY",
         "item1" : {
-            "tittle" : "Programador multidisciplinar",
-            "subTittle" : "Independiete",
+            "tittle" : "Programador Multidisciplinar",
+            "subTittle" : "Independiente",
             "timeline" : "09/2023 - Actual",
             "type" : "Remoto",
             "item1" : "- Desarrollo de videojuegos para plataformas Android.",
@@ -179,11 +179,11 @@
             "item5" : "- Trabajo con repositorios de GitHub.",
             "item6" : "- Documentación de código.",
             "item7" : "- Testing manual.",
-            "item8" : "- Desarrollo de tests programaticos.",
+            "item8" : "- Desarrollo de test programáticos.",
             "tech" : "Visual Studio - Unity 3D - C# - JavaScript - HTML - CSS - SQL - MongoDB - GIT - React.js"
         },
         "item2" : {
-            "tittle" : "Porgramador Junior Unity 3D/C#",
+            "tittle" : "Programador Junior Unity 3D/C#",
             "subTittle" : "Digital Monster Collective",
             "timeline" : "06/2023 - 09/2023",
             "type" : "Remoto",
@@ -208,7 +208,7 @@
             "tech" : "Suite Ofimática Windows Office, SAP, herramientas internas"
         },
         "item4" : {
-            "tittle" : "Gestor de expedientes electricos",
+            "tittle" : "Gestor de expedientes eléctricos",
             "subTittle" : "IDEA INGENIERÍA",
             "timeline" : "10/2018 - 02/2020",
             "type" : "Presencial",
@@ -218,10 +218,10 @@
             "item4" : "- Certificar y aprobar las mediciones del contratista de obra.",
             "item5" : "- Inventariar en la cartografía interna de los sistemas de Iberdrola las nuevas instalaciones de peticiones aceptadas por terceros.",
             "item6" : "- Cierre técnico-económico, con acta de puesta en marcha de obras aceptadas por terceros.",
-            "item7" : "- Registrar hoja instalaciones de enlace en las peticiones aceptadas porterceros.",
+            "item7" : "- Registrar hoja instalaciones de enlace en las peticiones aceptadas por terceros.",
             "tech" : "Suite Ofimática Windows Office, SAP, herramientas internas"
         },
-        "buttonText": "Una coleccion de experiencias profesionales",
+        "buttonText": "Una colección de experiencias profesionales",
         "nextButton": "ENLACES",
         "prevButton": "SKILLS"
     },
@@ -242,7 +242,7 @@
             "tittle": "Gamer Rest",
             "text": "Mi web y proyecto personal como Full Stack Web Developer."
         },
-        "buttonText" : "¡No todo puede contenerse en una unica web!",
+        "buttonText" : "¡No todo puede contenerse en una única web!",
         "nextButton" : "CONTACTO",
         "prevButton" : "EXPERIENCIA"
     },
@@ -256,7 +256,7 @@
             "button" : "Enviar"
         },
         "info" : {
-            "phone" : "<b>Telefono:</b> 661 34 86 16",
+            "phone" : "<b>Teléfono:</b> 661 34 86 16",
             "email" : "<b>Correo:</b> adrianginergimenez@gmail.com"
         },
         "buttonText" : "¿Quieres comentarme algo?",
@@ -264,6 +264,6 @@
         "prevButton" : "ENLACES"
     },
     "footer" : {
-        "text" : "© 2024 por Adrian Giner Gimenez"
+        "text" : "© 2024 por Adrián Giner Giménez"
     }
 }
