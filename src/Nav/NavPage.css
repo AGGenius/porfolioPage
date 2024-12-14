@@ -88,6 +88,7 @@ nav.colapsed {
 
 .nav__link {
     color: rgb(245, 245, 245);
+    cursor: pointer;
 
     padding-bottom: .1rem;
 
@@ -109,6 +110,7 @@ nav.colapsed {
 
 .nav__language {
     color: rgb(202, 235, 232);
+    cursor: pointer;
 
     border-left: 3px solid rgb(202, 235, 232);
 
