@@ -23,6 +23,7 @@ import visualIcon from "../assets/Icons/visual.png";
 
 //Modules
 import WebSkillsPage from "../Modules/Skills/WebSkills.jsx";
+import QASkillsPage from "../Modules/Skills/QASkills.jsx";
 import DatabaseSkillsPage from "../Modules/Skills/DatabaseSkills.jsx";
 import VideogameSkillsPage from "../Modules/Skills/VideogameSkills.jsx";
 import LanguageSkillsPage from "../Modules/Skills/LanguageSkills.jsx";
@@ -142,30 +143,36 @@ const SkillsPage = () => {
                                 {t("skills.item1")}
                             </p>
                         </li>
-                        <li className={skillPageSelector === "ddbb" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("ddbb")}>
+                        <li className={skillPageSelector === "QA" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("QA")}>
                             <p>
                                 {t("skills.item2")}
                             </p>
                         </li>
-                        <li className={skillPageSelector === "videogames" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("videogames")}>
+                        <li className={skillPageSelector === "ddbb" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("ddbb")}>
                             <p>
                                 {t("skills.item3")}
                             </p>
                         </li>
-                        <li className={skillPageSelector === "language" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("language")}>
+                        <li className={skillPageSelector === "videogames" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("videogames")}>
                             <p>
                                 {t("skills.item4")}
                             </p>
                         </li>
-                        <li className={skillPageSelector === "softSkills" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("softSkills")}>
+                        <li className={skillPageSelector === "language" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("language")}>
                             <p>
                                 {t("skills.item5")}
+                            </p>
+                        </li>
+                        <li className={skillPageSelector === "softSkills" ? "skillsPage__mainTextWrap--item selected" : "skillsPage__mainTextWrap--item"} onClick={() => handleSkillsPage("softSkills")}>
+                            <p>
+                                {t("skills.item6")}
                             </p>
                         </li>
                     </ul>
                     <div className={changeCard ? "skillsPage__mainTex--content exit" : "skillsPage__mainTex--content"}>
                         {skillPage === "" && <WebSkillsPage />}
                         {skillPage === "web" && <WebSkillsPage />}
+                        {skillPage === "QA" && <QASkillsPage />}
                         {skillPage === "ddbb" && <DatabaseSkillsPage />}
                         {skillPage === "videogames" && <VideogameSkillsPage />}
                         {skillPage === "language" && <LanguageSkillsPage />}

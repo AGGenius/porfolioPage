@@ -81,9 +81,6 @@ const ExperiencePage = () => {
                             <p className="experiencePage__list--content">
                                 {t("experience.item1.item7")}
                             </p>
-                            <p className="experiencePage__list--content">
-                                {t("experience.item1.item8")}
-                            </p>
                             <p className="experiencePage__list--content tech"><b>
                                 {t("experience.item1.tech")}
                             </b></p>
@@ -113,6 +110,18 @@ const ExperiencePage = () => {
                             <p className="experiencePage__list--content">
                                 {t("experience.item2.item4")}
                             </p>
+                            <p className="experiencePage__list--content">
+                                {t("experience.item2.item5")}
+                            </p>
+                            <p className="experiencePage__list--content">
+                                {t("experience.item2.item6")}
+                            </p>
+                            <p className="experiencePage__list--content">
+                                {t("experience.item2.item7")}
+                            </p>
+                            <p className="experiencePage__list--content">
+                                {t("experience.item2.item8")}
+                            </p>
                             <p className="experiencePage__list--content tech"><b>
                                 {t("experience.item2.tech")}
                             </b></p>
@@ -141,15 +150,6 @@ const ExperiencePage = () => {
                             </p>
                             <p className="experiencePage__list--content">
                                 {t("experience.item3.item4")}
-                            </p>
-                            <p className="experiencePage__list--content">
-                                {t("experience.item3.item5")}
-                            </p>
-                            <p className="experiencePage__list--content">
-                                {t("experience.item3.item6")}
-                            </p>
-                            <p className="experiencePage__list--content">
-                                {t("experience.item3.item7")}
                             </p>
                             <p className="experiencePage__list--content tech"><b>
                                 {t("experience.item3.tech")}

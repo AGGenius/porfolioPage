@@ -92,16 +92,25 @@
     },
     "skills": {
         "item1": "WEB",
-        "item2": "DDBB",
-        "item3": "JUEGOS",
-        "item4": "IDIOMAS",
-        "item5": "SOFT SKILLS",
+        "item2": "QA",
+        "item3": "DDBB",
+        "item4": "JUEGOS",
+        "item5": "IDIOMAS",
+        "item6": "SOFT SKILLS",
         "web": {
             "tittle": "DESARROLLADOR WEB FULL STACK",
             "paragraph1": "Creación, despliegue y control de servicios de <b>Back End y Front End</b> completos.",
             "paragraph2": "Proficiente en la programación de páginas web haciendo uso de <b>HTML - CSS - JavaScript </b> para crear contenidos interesantes y dinámicos al aplicar <b>Node.js, React.js, y Expres.js</b>, incrementando la capacidad y funcionalidades del servicio. ",
             "paragraph3": "Conocimientos y control de <b>AUTH0, JWT</b> para el manejo de usuarios. Manejo de <b>Fetch y Axios</b>, así como <b>HTTP</b> para las peticiones de Front a Back y de este mismo al resto de servicios, así como uso de <b>REST API</b>.",
             "imageText": "Imagen creada por vectorjuice en Freepik"
+        },
+        "QA": {
+            "tittle": "QUALITY ASSURANCE ENGINEER",
+            "paragraph1": "Experiencia en <b>pruebas manuales y automatizadas</b> para asegurar la calidad y estabilidad de aplicaciones web durante su ciclo de desarrollo.",
+            "paragraph2": "Desarrollo y mantenimiento de <b>pruebas end-to-end</b> utilizando <b>Cypress</b>, garantizando que los flujos principales del usuario funcionen correctamente tras cada actualización.",
+            "paragraph3": "Diseño y ejecución de <b>casos de prueba</b> basados en historias de usuario y criterios de aceptación, incluyendo <b>pruebas funcionales, de regresión, exploratorias y smoke</b>.",
+            "paragraph4": "Uso de herramientas como <b>Jira, Git y Qase</b> para el seguimiento de errores, documentación de pruebas y colaboración con equipos ágiles mediante <b>Slack</b> y metodologías Scrum.",
+            "imageText": "Imagen obtenida de manypixels"
         },
         "ddbb": {
             "tittle": "DESARROLLO DE BASES DE DATOS",
@@ -165,105 +174,105 @@
         "nextButton": "EXPERIENCIA",
         "prevButton": "PORFOLIO"
     },
-    "experience" : {
-        "date" : "HOY",
-        "item1" : {
-            "tittle" : "Programador Multidisciplinar",
-            "subTittle" : "Independiente",
-            "timeline" : "09/2023 - Actual",
-            "type" : "Remoto",
-            "item1" : "- Desarrollo de videojuegos para plataformas Android.",
-            "item2" : "- Desarrollo de servicios de Front y Back.",
-            "item3" : "- Creación y gestión de bases de datos relacionales y no relacionales.",
-            "item4" : "- Despliegue de servicios.",
-            "item5" : "- Trabajo con repositorios de GitHub.",
-            "item6" : "- Documentación de código.",
-            "item7" : "- Testing manual.",
-            "item8" : "- Desarrollo de test programáticos.",
-            "tech" : "Visual Studio - Unity 3D - C# - JavaScript - HTML - CSS - SQL - MongoDB - GIT - React.js"
+    "experience": {
+        "date": "HOY",
+        "item1": {
+            "tittle": "Quality Assurance Engineer",
+            "subTittle": "Kuorum",
+            "timeline": "06/2025 - Actualidad",
+            "type": "Híbrido",
+            "item1": "- Creacion y mantenimiento de pruebas end-to-end utilizando Cypress.",
+            "item2": "- Pruebas tipo smoke, funcionares, de regresión, y exploratorias en aplicaciones web.",
+            "item3": "- Diseño y ejecución de casos de prueba basados en historias de usuario y criterios de aceptación.",
+            "item4": "- Pruebas multiplataforma y multidispositivo para asegurar una experiencia de usuario coherente.",
+            "item5": "- Diseñar planes de pruebas, casos de prueba, e informes de errores con pasos claros para su reproducción.",
+            "item6": "- Participación en la organización de los sprints QA y validación QA de historias de usuario.",
+            "item7": "- Registro y seguimiento de errores mediante tickets con Jira.",
+            "tech": "Visual Studio Code - Cypress - JavaScript - Qase - GIT - Jira - Slack"
         },
-        "item2" : {
-            "tittle" : "Programador Junior Unity 3D/C#",
-            "subTittle" : "Digital Monster Collective",
-            "timeline" : "06/2023 - 09/2023",
-            "type" : "Remoto",
-            "item1" : "- Desarrollo de videojuegos 2D con Unity 3D.",
-            "item2" : "- Test e informes de los proyectos internos.",
-            "item3" : "- Análisis del código implementado.",
-            "item4" : "- Refactorización de código.",
-            "tech" : "Visual Studio - Unity 3D - C# - Plastic SCM"
+        "item2": {
+            "tittle": "Programador Multidisciplinar",
+            "subTittle": "Independiente",
+            "timeline": "09/2023 - Actual",
+            "type": "Remoto",
+            "item1": "- Desarrollo de videojuegos para plataformas Android.",
+            "item2": "- Desarrollo de servicios de Front y Back.",
+            "item3": "- Creación y gestión de bases de datos relacionales y no relacionales.",
+            "item4": "- Despliegue de servicios.",
+            "item5": "- Trabajo con repositorios de GitHub.",
+            "item6": "- Documentación de código.",
+            "item7": "- Testing manual.",
+            "item8": "- Desarrollo de test programáticos.",
+            "tech": "Visual Studio - Unity 3D - C# - JavaScript - HTML - CSS - SQL - MongoDB - GIT - React.js"
         },
-        "item3" : {
-            "tittle" : "Gestión de expedientes en baja tensión",
-            "subTittle" : "SEYP INGENIERIA SL",
-            "timeline" : "06/2020 - 02/2022",
-            "type" : "Hibrido",
-            "item1" : "- Analizar la viabilidad de nuevas peticiones de terceros en las redes de Distribución BT de Iberdrola.",
-            "item2" : "- Informar las condiciones técnico-económicas de las peticiones de terceros.",
-            "item3" : "- Coordinar los trabajos adjudicados con el contratista de Iberdrola.",
-            "item4" : "- Certificar y aprobar las mediciones del contratista de obra.",
-            "item5" : "- Inventariar en la cartografía interna de los sistemas de Iberdrola las nuevas instalaciones de peticiones aceptadas por terceros.",
-            "item6" : "- Cierre técnico-económico, con acta de puesta en marcha de obras aceptadas por terceros.",
-            "item7" : "- Registrar hoja instalaciones de enlace en las peticiones aceptadas por terceros.",
-            "tech" : "Suite Ofimática Windows Office, SAP, herramientas internas"
+        "item3": {
+            "tittle": "Programador Junior Unity 3D/C#",
+            "subTittle": "Digital Monster Collective",
+            "timeline": "06/2023 - 09/2023",
+            "type": "Remoto",
+            "item1": "- Desarrollo de videojuegos 2D con Unity 3D.",
+            "item2": "- Test e informes de los proyectos internos.",
+            "item3": "- Análisis del código implementado.",
+            "item4": "- Refactorización de código.",
+            "tech": "Visual Studio - Unity 3D - C# - Plastic SCM"
         },
-        "item4" : {
-            "tittle" : "Gestor de expedientes eléctricos",
-            "subTittle" : "IDEA INGENIERÍA",
-            "timeline" : "10/2018 - 02/2020",
-            "type" : "Presencial",
-            "item1" : "- Analizar la viabilidad de nuevas peticiones de terceros en las redes de Distribución BT de Iberdrola.",
-            "item2" : "- Informar las condiciones técnico-económicas de las peticiones de terceros.",
-            "item3" : "- Coordinar los trabajos adjudicados con el contratista de Iberdrola.",
-            "item4" : "- Certificar y aprobar las mediciones del contratista de obra.",
-            "item5" : "- Inventariar en la cartografía interna de los sistemas de Iberdrola las nuevas instalaciones de peticiones aceptadas por terceros.",
-            "item6" : "- Cierre técnico-económico, con acta de puesta en marcha de obras aceptadas por terceros.",
-            "item7" : "- Registrar hoja instalaciones de enlace en las peticiones aceptadas por terceros.",
-            "tech" : "Suite Ofimática Windows Office, SAP, herramientas internas"
+        "item4": {
+            "tittle": "Gestión de expedientes en baja tensión",
+            "subTittle": "SEYP INGENIERIA SL",
+            "timeline": "06/2020 - 02/2022",
+            "type": "Hibrido",
+            "item1": "- Analizar la viabilidad de nuevas peticiones de terceros en las redes de Distribución BT de Iberdrola.",
+            "item2": "- Informar las condiciones técnico-económicas de las peticiones de terceros.",
+            "item3": "- Coordinar los trabajos adjudicados con el contratista de Iberdrola.",
+            "item4": "- Certificar y aprobar las mediciones del contratista de obra.",
+            "item5": "- Inventariar en la cartografía interna de los sistemas de Iberdrola las nuevas instalaciones de peticiones aceptadas por terceros.",
+            "item6": "- Cierre técnico-económico, con acta de puesta en marcha de obras aceptadas por terceros.",
+            "item7": "- Registrar hoja instalaciones de enlace en las peticiones aceptadas por terceros.",
+            "tech": "Suite Ofimática Windows Office, SAP, herramientas internas"
         },
         "buttonText": "Una colección de experiencias profesionales",
         "nextButton": "ENLACES",
         "prevButton": "SKILLS"
     },
-    "links" : {
-        "item1" : {
+    "links": {
+        "item1": {
             "tittle": "LinkedIn",
             "text": "Mi red social para el sector profesional."
         },
-        "item2" : {
+        "item2": {
             "tittle": "Github",
             "text": "Todos mis repositorios para que puedas echar un ojo a mis skills de programación."
         },
-        "item3" : {
+        "item3": {
             "tittle": "Google Play",
             "text": "Mi perfil de desarrollador para Android."
         },
-        "item4" : {
+        "item4": {
             "tittle": "Gamer Rest",
             "text": "Mi web y proyecto personal como Full Stack Web Developer."
         },
-        "buttonText" : "¡No todo puede contenerse en una única web!",
-        "nextButton" : "CONTACTO",
-        "prevButton" : "EXPERIENCIA"
+        "buttonText": "¡No todo puede contenerse en una única web!",
+        "nextButton": "CONTACTO",
+        "prevButton": "EXPERIENCIA"
     },
-    "contact" : {
-        "sendEmail" : {
-            "tittle" : "Puedes usar el siguiente formulario para enviarme un correo",
-            "label1" : "Nombre",
-            "label2" : "Correo",
-            "label3" : "Asunto",
-            "label4" : "Mensaje",
-            "button" : "Enviar"
+    "contact": {
+        "sendEmail": {
+            "tittle": "Puedes usar el siguiente formulario para enviarme un correo",
+            "label1": "Nombre",
+            "label2": "Correo",
+            "label3": "Asunto",
+            "label4": "Mensaje",
+            "button": "Enviar"
         },
-        "info" : {
-            "phone" : "<b>Teléfono:</b> 661 34 86 16",
-            "email" : "<b>Correo:</b> adrianginergimenez@gmail.com"
+        "info": {
+            "phone": "<b>Teléfono:</b> 661 34 86 16",
+            "email": "<b>Correo:</b> adrianginergimenez@gmail.com"
         },
-        "buttonText" : "¿Quieres comentarme algo?",
-        "nextButton" : "SOBRE MI",
-        "prevButton" : "ENLACES"
+        "buttonText": "¿Quieres comentarme algo?",
+        "nextButton": "SOBRE MI",
+        "prevButton": "ENLACES"
     },
-    "footer" : {
-        "text" : "© 2024 por Adrián Giner Giménez"
+    "footer": {
+        "text": "© 2024 por Adrián Giner Giménez"
     }
 }
